@@ -167,7 +167,7 @@
         {
           "rot": "Terminal · download the kit and check the empty table",
           "icone": "terminal",
-          "conteudo": "F=${FTH:-$HOME/fth}; mkdir -p $F && cd $F\n[ -d anatomia ] || git clone -q --depth 1 https://github.com/inematds/formacao-fth-anatomia-v72 anatomia\n[ -f fichas.csv ] || cp anatomia/kit/fichas-modelo.csv fichas.csv   # your copy to fill in\npython3 anatomia/kit/conferir_fichas.py anatomia/kit/fichas-modelo.csv; echo \"saída: $?\""
+          "conteudo": "F=${FTH:-$HOME/fth}; mkdir -p $F && cd $F\n[ -d anatomia ] || git clone -q --depth 1 https://github.com/linnoff88-dev/formacao-fth-anatomia-v72 anatomia\n[ -f fichas.csv ] || cp anatomia/kit/fichas-modelo.csv fichas.csv   # your copy to fill in\npython3 anatomia/kit/conferir_fichas.py anatomia/kit/fichas-modelo.csv; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -348,7 +348,7 @@
         },
         {
           "t": "Market, funding rounds, and standards: VLA course, lesson 8",
-          "href": "https://inematds.github.io/vla-v72/en/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "grafico"
         }
       ]

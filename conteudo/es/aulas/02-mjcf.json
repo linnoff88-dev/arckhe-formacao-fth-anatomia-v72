@@ -143,7 +143,7 @@
         {
           "rot": "Terminal · preparar ~/fth",
           "icone": "terminal",
-          "conteudo": "F=${FTH:-$HOME/fth}; mkdir -p $F && cd $F\npython3.12 -m venv .venv && . .venv/bin/activate\npip install -q mujoco==3.16.0 numpy\n[ -d anatomia ] || git clone -q --depth 1 https://github.com/inematds/formacao-fth-anatomia-v72 anatomia\n[ -d mujoco_menagerie ] || git clone -q --filter=blob:none --sparse https://github.com/google-deepmind/mujoco_menagerie\ncd mujoco_menagerie && git sparse-checkout set unitree_g1 unitree_h1 robotis_op3 booster_t1\ngit checkout -q 62ab00f && git log -1 --format='menagerie %h (%ad)' --date=short\npython3 -c \"import mujoco, numpy; print('mujoco', mujoco.__version__, '· numpy', numpy.__version__)\""
+          "conteudo": "F=${FTH:-$HOME/fth}; mkdir -p $F && cd $F\npython3.12 -m venv .venv && . .venv/bin/activate\npip install -q mujoco==3.16.0 numpy\n[ -d anatomia ] || git clone -q --depth 1 https://github.com/linnoff88-dev/formacao-fth-anatomia-v72 anatomia\n[ -d mujoco_menagerie ] || git clone -q --filter=blob:none --sparse https://github.com/google-deepmind/mujoco_menagerie\ncd mujoco_menagerie && git sparse-checkout set unitree_g1 unitree_h1 robotis_op3 booster_t1\ngit checkout -q 62ab00f && git log -1 --format='menagerie %h (%ad)' --date=short\npython3 -c \"import mujoco, numpy; print('mujoco', mujoco.__version__, '· numpy', numpy.__version__)\""
         }
       ],
       "saida": {
@@ -340,7 +340,7 @@
         },
         {
           "t": "URDF y Gazebo desde cero: curso robot",
-          "href": "https://inematds.github.io/robot/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "robo"
         }
       ]

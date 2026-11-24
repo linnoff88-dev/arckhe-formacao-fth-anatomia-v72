@@ -34,5 +34,5 @@ Saídas de erro comum capturadas: `e1-ficha-erro` (aula 1), `e2-sem-menagerie` (
 Não há `simfila`/`simconversa`: este curso não ensina ciclo (é anatomia). O ciclo treino → avaliação → ajuste entra no curso 1.
 
 ## Links fixos
-- Curso seguinte (aula 8, `links`): https://inematds.github.io/formacao-fth-locomocao-v72/ (ainda não publicado em 19/10/2026 — 404 esperado no `validar --links`).
+- Curso seguinte (aula 8, `links`): https://linnoff88-dev.github.io/ (ainda não publicado em 19/10/2026 — 404 esperado no `validar --links`).
 - Donos externos: vla-v72 (mercado, VLA), robot (ROS 2, PID, URDF).

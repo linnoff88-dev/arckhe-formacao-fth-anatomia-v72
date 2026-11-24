@@ -1,12 +1,12 @@
 {
   "id": "formacao-fth-anatomia-v72",
   "lang": "en",
-  "url": "https://inematds.github.io/formacao-fth-anatomia-v72/en/",
+  "url": "https://linnoff88-dev.github.io/
   "nome": "FTH 0 · The humanoid's body",
   "sub": "From actuator to simulation model",
   "volta": {
-    "t": "INEMA.CLUB",
-    "href": "https://inema.club/"
+    "t": "ARCKHÉ AI",
+    "href": "https://ARCKHÉ AI/"
   },
   "lado_card": {
     "rot": "The tool for the practice sessions",
@@ -15,7 +15,7 @@
     "link": "Open the MuJoCo Menagerie",
     "href": "https://github.com/google-deepmind/mujoco_menagerie"
   },
-  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · FTH — Humanoid Technology Training, course 0 of 5 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://github.com/inematds/formacao-fth-anatomia-v72\">course kit on GitHub</a>",
+  "rodape": "ARCKHÉ AI · open and free content · ARCKHÉ Learning v7.2 format · FTH — Humanoid Technology Training, course 0 of 5 · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://github.com/linnoff88-dev/formacao-fth-anatomia-v72\">course kit on GitHub</a>",
   "videos": {},
   "inicio": {
     "kicker": "FTH — Humanoid Technology Training · course 0 of 5 · 8 lessons",
@@ -24,7 +24,7 @@
     "cta": "Start with lesson 1",
     "cta2": {
       "t": "See the kit on GitHub",
-      "href": "https://github.com/inematds/formacao-fth-anatomia-v72"
+      "href": "https://github.com/linnoff88-dev/formacao-fth-anatomia-v72"
     },
     "capa_alt": "Industrial humanoid robot standing in a dark lab, strapped to a safety gantry, with the title The humanoid's body.",
     "numeros": [
