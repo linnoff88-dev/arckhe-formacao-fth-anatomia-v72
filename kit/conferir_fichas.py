@@ -3,8 +3,8 @@
 
 Uso: python3 kit/conferir_fichas.py fichas.csv
 Colunas: robo,estagio,fonte,data,evidencia
-  estagio  = demo | piloto | produção   (demo: só vídeo/evento; piloto: em cliente, tarefa estreita;
-             produção: vendido ou entregue em série a quem paga)
+  estagio  = demo | piloto | produçêo   (demo: só vídeo/evento; piloto: em cliente, tarefa estreita;
+             produçêo: vendido ou entregue em série a quem paga)
   fonte    = URL https:// da fonte que sustenta o estágio
   data     = quando a fonte foi publicada ou lida: DD/MM/AAAA ou MM/AAAA
 Sai com código 0 só se houver 6 robôs ou mais e todos tiverem estágio, fonte e data válidos.
@@ -13,7 +13,7 @@ import csv
 import re
 import sys
 
-ESTAGIOS = {"demo": "demo", "piloto": "piloto", "produção": "produção", "producao": "produção"}
+ESTAGIOS = {"demo": "demo", "piloto": "piloto", "produçêo": "produçêo", "producao": "produçêo"}
 DATA = re.compile(r"^(\d{2}/)?\d{2}/\d{4}$")
 
 
@@ -24,7 +24,7 @@ def main():
     with open(sys.argv[1], encoding="utf-8") as f:
         linhas = [r for r in csv.DictReader(f) if (r.get("robo") or "").strip()]
     ok = 0
-    contagem = {"demo": 0, "piloto": 0, "produção": 0}
+    contagem = {"demo": 0, "piloto": 0, "produçêo": 0}
     for r in linhas:
         falta = []
         est = ESTAGIOS.get((r.get("estagio") or "").strip().lower())
@@ -40,7 +40,7 @@ def main():
             ok += 1
             contagem[est] += 1
             print(f"  {r['robo'].strip():<22} {est:<9} {r['data'].strip()}")
-    print(f"estágios: demo {contagem['demo']} · piloto {contagem['piloto']} · produção {contagem['produção']}")
+    print(f"estágios: demo {contagem['demo']} · piloto {contagem['piloto']} · produçêo {contagem['produçêo']}")
     print(f"{len(linhas)} {'robô' if len(linhas) == 1 else 'robôs'}, {ok} com fonte e data")
     return 0 if len(linhas) >= 6 and ok == len(linhas) else 1
 

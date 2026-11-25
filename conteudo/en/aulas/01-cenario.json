@@ -175,11 +175,11 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>  Unitree G1             falta: estágio, fonte, data\n  Unitree R1             falta: estágio, fonte, data\n  Booster K1             falta: estágio, fonte, data\n  Figure 03              falta: estágio, fonte, data\n  Boston Dynamics Atlas  falta: estágio, fonte, data\n  1X NEO                 falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produção 0\n6 robôs, 0 com fonte e data\nsaída: 1</pre><p>The empty table fails: 0 of 6 and exit code 1. That's how the criterion fails before the work is done.</p>"
+            "html": "<pre>  Unitree G1             falta: estágio, fonte, data\n  Unitree R1             falta: estágio, fonte, data\n  Booster K1             falta: estágio, fonte, data\n  Figure 03              falta: estágio, fonte, data\n  Boston Dynamics Atlas  falta: estágio, fonte, data\n  1X NEO                 falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produçêo 0\n6 robôs, 0 com fonte e data\nsaída: 1</pre><p>The empty table fails: 0 of 6 and exit code 1. That's how the criterion fails before the work is done.</p>"
           },
           {
             "rot": "Common mistake: \"coming soon\" and a video as a source",
-            "html": "<pre>  Tesla Optimus V3       falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produção 0\n1 robô, 0 com fonte e data\nsaída: 1</pre><p>\"Coming soon\" is not a stage, \"I saw it in a video\" is not a URL, and \"2026\" alone is not a date. For the Optimus V3, the honest answer is <b>demo</b>, with Tesla's source and the date.</p>"
+            "html": "<pre>  Tesla Optimus V3       falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produçêo 0\n1 robô, 0 com fonte e data\nsaída: 1</pre><p>\"Coming soon\" is not a stage, \"I saw it in a video\" is not a URL, and \"2026\" alone is not a date. For the Optimus V3, the honest answer is <b>demo</b>, with Tesla's source and the date.</p>"
           }
         ]
       }
@@ -200,7 +200,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>  Unitree G1             produção  19/10/2026\n  Unitree R1             produção  19/10/2026\n  Booster K1             produção  19/10/2026\n  Figure 03              piloto    27/01/2026\n  Boston Dynamics Atlas  piloto    01/2026\n  1X NEO                 demo      04/2026\nestágios: demo 1 · piloto 2 · produção 3\n6 robôs, 6 com fonte e data\nsaída: 0</pre><p>One possible answer, with the sources from this lesson; the date is the one from the source used (for the Figure 03, the Helix 02 announcement; the arrival at BMW, ~06/2026, is reported). You may disagree with a stage (is the Atlas already production?), as long as the evidence supports it.</p>"
+            "html": "<pre>  Unitree G1             produçêo  19/10/2026\n  Unitree R1             produçêo  19/10/2026\n  Booster K1             produçêo  19/10/2026\n  Figure 03              piloto    27/01/2026\n  Boston Dynamics Atlas  piloto    01/2026\n  1X NEO                 demo      04/2026\nestágios: demo 1 · piloto 2 · produçêo 3\n6 robôs, 6 com fonte e data\nsaída: 0</pre><p>One possible answer, with the sources from this lesson; the date is the one from the source used (for the Figure 03, the Helix 02 announcement; the arrival at BMW, ~06/2026, is reported). You may disagree with a stage (is the Atlas already production?), as long as the evidence supports it.</p>"
           }
         ]
       }

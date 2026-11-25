@@ -5,7 +5,7 @@ Uso: python3 kit/autonomia.py --wh ENERGIA_WH --w POTENCIA_MEDIA_W
      python3 kit/autonomia.py --pack-s CELULAS --ah AH [--v-celula 3.7] --w POTENCIA_MEDIA_W
      python3 kit/autonomia.py --hz 1000 500 50 10
 Autonomia (min) = energia (Wh) / potência média (W) × 60. Sem margem de reserva: na vida real
-ninguém descarrega a bateria até zero, então o tempo útil é menor.
+ninguém descarrega a bateria até zero, entêo o tempo útil é menor.
 Orçamento de laço = 1000 / frequência (ms): o tempo que cada camada tem para ler, calcular e mandar.
 """
 import argparse
@@ -17,7 +17,7 @@ def main():
     ap.add_argument("--wh", type=float, help="energia da bateria em Wh")
     ap.add_argument("--pack-s", type=int, help="células em série (ex.: 13 para 13S)")
     ap.add_argument("--ah", type=float, help="capacidade em Ah (9000 mAh = 9)")
-    ap.add_argument("--v-celula", type=float, default=3.7, help="tensão nominal por célula (Li-ion: 3,6–3,7 V)")
+    ap.add_argument("--v-celula", type=float, default=3.7, help="tensêo nominal por célula (Li-ion: 3,6–3,7 V)")
     ap.add_argument("--w", type=float, help="potência média em W")
     ap.add_argument("--hz", type=float, nargs="+", help="frequências de laço para o orçamento de tempo")
     a = ap.parse_args()

@@ -48,7 +48,7 @@
               "sub": "sem motor"
             }
           ],
-          "detalhe": "A raiz da árvore. Não tem motor: o robô só muda de lugar empurrando o chão. É por isso que andar é difícil."
+          "detalhe": "A raiz da árvore. Nêo tem motor: o robô só muda de lugar empurrando o chêo. É por isso que andar é difícil."
         },
         {
           "icone": "robo",
@@ -69,7 +69,7 @@
               "t": "tornozelo: pitch, roll"
             }
           ],
-          "detalhe": "Seis juntas por perna, a mesma conta que a Unitree publica para o G1. Três no quadril (para frente, para o lado e girar), uma no joelho e duas no tornozelo. Com seis, o pé consegue qualquer posição e orientação dentro do alcance."
+          "detalhe": "Seis juntas por perna, a mesma conta que a Unitree publica para o G1. Três no quadril (para frente, para o lado e girar), uma no joelho e duas no tornozelo. Com seis, o pé consegue qualquer posiçêo e orientaçêo dentro do alcance."
         },
         {
           "icone": "camadas",
@@ -81,7 +81,7 @@
               "t": "yaw, roll, pitch"
             }
           ],
-          "detalhe": "O modelo do Menagerie tem 3 juntas na cintura. A ficha da Unitree diz 1 na cintura e mais 2 opcionais: é a diferença entre versões, não um erro."
+          "detalhe": "O modelo do Menagerie tem 3 juntas na cintura. A ficha da Unitree diz 1 na cintura e mais 2 opcionais: é a diferença entre versões, nêo um erro."
         },
         {
           "icone": "robo",
@@ -101,7 +101,7 @@
               "t": "punho: roll, pitch, yaw"
             }
           ],
-          "detalhe": "Sete por braço no modelo; a ficha da Unitree fala em 5 no braço da versão base. No punho, pitch e yaw aguentam só 5 N·m (o roll, 25): servem para orientar a mão, não para carregar peso."
+          "detalhe": "Sete por braço no modelo; a ficha da Unitree fala em 5 no braço da versêo base. No punho, pitch e yaw aguentam só 5 N·m (o roll, 25): servem para orientar a mêo, nêo para carregar peso."
         }
       ],
       "legenda": "12 nas pernas + 3 na cintura + 14 nos braços = 29 = nu."
@@ -115,8 +115,8 @@
           "titulo": "Nome",
           "sub": "lado, parte, eixo",
           "texto": [
-            "left_hip_roll_joint: perna esquerda, quadril, rotação em roll (inclinar para o lado). Pitch dobra para frente e para trás; yaw gira em torno do eixo vertical.",
-            "A indentação da saída mostra quem está pendurado em quem: o tornozelo depende do joelho, que depende do quadril."
+            "left_hip_roll_joint: perna esquerda, quadril, rotaçêo em roll (inclinar para o lado). Pitch dobra para frente e para trás; yaw gira em torno do eixo vertical.",
+            "A indentaçêo da saída mostra quem está pendurado em quem: o tornozelo depende do joelho, que depende do quadril."
           ]
         },
         {
@@ -140,7 +140,7 @@
           "sub": "juntas = nu",
           "texto": [
             "O total de juntas (njnt=30) inclui a base livre. O número que interessa ao controlador é o de juntas articuladas, que tem de bater com o de atuadores.",
-            "Se não bater, sobrou junta passiva (sem motor) ou motor fora de junta: os dois mudam o seu controlador."
+            "Se nêo bater, sobrou junta passiva (sem motor) ou motor fora de junta: os dois mudam o seu controlador."
           ],
           "exemplo": {
             "rot": "Linha final do script",
@@ -205,7 +205,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "O G1 do Menagerie tem njnt=30 e nu=29. De onde vem a diferença?",
@@ -216,20 +216,20 @@
             "O sensor de IMU, que conta como junta."
           ],
           "certa": 2,
-          "explica": "A base livre é uma junta (do tipo free) e não tem motor. As 29 articuladas têm um atuador cada.",
+          "explica": "A base livre é uma junta (do tipo free) e nêo tem motor. As 29 articuladas têm um atuador cada.",
           "ref": "passos",
           "cert": true
         },
         {
           "p": "Por que a perna de um humanoide costuma ter 6 juntas?",
           "opcoes": [
-            "Para pôr o pé em qualquer posição e orientação dentro do alcance.",
+            "Para pôr o pé em qualquer posiçêo e orientaçêo dentro do alcance.",
             "Porque os motores dos fabricantes vêm em pacotes de seis.",
-            "Porque com menos de seis o robô não consegue ficar de pé parado.",
+            "Porque com menos de seis o robô nêo consegue ficar de pé parado.",
             "Para copiar a perna humana, que tem exatamente seis juntas iguais."
           ],
           "certa": 0,
-          "explica": "Posição (3) e orientação (3) do pé pedem seis graus de liberdade. Três no quadril, um no joelho e dois no tornozelo é o arranjo do G1 e de muitos outros.",
+          "explica": "Posiçêo (3) e orientaçêo (3) do pé pedem seis graus de liberdade. Três no quadril, um no joelho e dois no tornozelo é o arranjo do G1 e de muitos outros.",
           "ref": "diagrama"
         },
         {
@@ -238,10 +238,10 @@
             "O Menagerie está errado; use o valor de 1 junta da ficha oficial.",
             "A ficha da Unitree está errada; use as 3 juntas do arquivo.",
             "Somar as duas fontes: o robô tem 4 juntas na cintura.",
-            "São versões diferentes do G1; anote qual versão o modelo representa."
+            "Sêo versões diferentes do G1; anote qual versêo o modelo representa."
           ],
           "certa": 3,
-          "explica": "O G1 tem variantes de 23 a 43 graus de liberdade. O modelo representa uma delas; o seu controlador tem de casar com a versão do robô que você vai usar.",
+          "explica": "O G1 tem variantes de 23 a 43 graus de liberdade. O modelo representa uma delas; o seu controlador tem de casar com a versêo do robô que você vai usar.",
           "ref": "diagrama"
         }
       ]
@@ -260,7 +260,7 @@
         },
         {
           "t": "Conferência",
-          "texto": "Juntas articuladas = nu; a base não conta."
+          "texto": "Juntas articuladas = nu; a base nêo conta."
         }
       ]
     },
@@ -274,7 +274,7 @@
           "icone": "arquivo"
         },
         {
-          "t": "Unitree G1: graus de liberdade por versão",
+          "t": "Unitree G1: graus de liberdade por versêo",
           "href": "https://www.unitree.com/g1",
           "icone": "robo"
         },

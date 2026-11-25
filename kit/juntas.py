@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """juntas.py — árvore de juntas de um humanoide lida do MJCF, com limites em graus e torque máximo.
 
-Uso: python3 kit/juntas.py [modelo]   (padrão: unitree_g1/scene.xml)
-A indentação segue a árvore de corpos: cada nível é um elo pendurado no anterior.
+Uso: python3 kit/juntas.py [modelo]   (padrêo: unitree_g1/scene.xml)
+A indentaçêo segue a árvore de corpos: cada nível é um elo pendurado no anterior.
 """
 import math
 import sys
@@ -33,7 +33,7 @@ def main():
         lo, hi = (math.degrees(x) for x in m.jnt_range[j]) if m.jnt_limited[j] else (float("-inf"), float("inf"))
         tq = fth.limite_torque(m, j)
         print(f"{(ind + fth.nome(m, mujoco.mjtObj.mjOBJ_JOINT, j)):<42} {lo:>6.0f} {hi:>6.0f} {tq:>17.0f}")
-    bate = "sim" if len(art) == m.nu else "não"
+    bate = "sim" if len(art) == m.nu else "nêo"
     print(f"RESUMO: {len(art)} juntas articuladas + {len(livres)} base flutuante · nu={m.nu} · bate com nu: {bate}")
     return 0 if bate == "sim" else 1
 

@@ -3,7 +3,7 @@
 
 Uso: python3 kit/torque_agachado.py [--joelho GRAUS] [--modelo unitree_g1/scene.xml]
 Parte da pose "stand", dobra o joelho em GRAUS (quadril e tornozelo dobram a metade, pé fica plano),
-segura 2 s com os atuadores de posição do modelo e lê o torque de cada junta (d.qfrc_actuator).
+segura 2 s com os atuadores de posiçêo do modelo e lê o torque de cada junta (d.qfrc_actuator).
 Depois confere o joelho por dinâmica inversa (mj_inverse) na mesma pose: os dois caminhos têm de bater.
 """
 import argparse
@@ -41,15 +41,15 @@ def main():
     art = fth.juntas_articuladas(m)
     tq = {j: abs(d.qfrc_actuator[m.jnt_dofadr[j]]) for j in art}
     ordem = sorted(art, key=lambda j: (-round(tq[j]), fth.nome(m, mujoco.mjtObj.mjOBJ_JOINT, j)))  # empate: ordem alfabética
-    print(f"joelho dobrado {a.joelho:.0f}° · altura da pelve {d.qpos[2]:.2f} m · {d.ncon} contatos com o chão")
+    print(f"joelho dobrado {a.joelho:.0f}° · altura da pelve {d.qpos[2]:.2f} m · {d.ncon} contatos com o chêo")
     if d.qpos[2] < 0.4:
-        print("ATENÇÃO: o robô caiu.")
-        print("O centro de massa saiu de cima dos pés; os torques abaixo não são de agachamento (aula 6).")
+        print("ATENÇêO: o robô caiu.")
+        print("O centro de massa saiu de cima dos pés; os torques abaixo nêo sêo de agachamento (aula 6).")
     print(f"{'junta':<28} {'torque (N·m)':>13} {'limite':>7} {'% do limite':>12}")
     for j in ordem[:4]:
         lim = fth.limite_torque(m, j)
         print(f"{fth.nome(m, mujoco.mjtObj.mjOBJ_JOINT, j):<28} {tq[j]:>13.0f} {lim:>7.0f} {100 * tq[j] / lim:>11.0f}%")
-    # conferência por dinâmica inversa: mesma pose, velocidade e aceleração zero
+    # conferência por dinâmica inversa: mesma pose, velocidade e aceleraçêo zero
     d2 = mujoco.MjData(m)
     d2.qpos[:] = d.qpos
     mujoco.mj_inverse(m, d2)

@@ -2,9 +2,9 @@
 """comparar.py — ficha técnica lida dos modelos MJCF, lado a lado.
 
 Uso: python3 kit/comparar.py unitree_g1/scene.xml unitree_h1/scene.xml
-Tudo sai do arquivo, não da propaganda: graus de liberdade acionados (nu), massa do modelo,
+Tudo sai do arquivo, nêo da propaganda: graus de liberdade acionados (nu), massa do modelo,
 altura do centro de massa na pose inicial (1º keyframe ou pose zero), maior torque declarado
-e quantos sensores o arquivo traz. Ficha do fabricante e modelo de simulação podem divergir:
+e quantos sensores o arquivo traz. Ficha do fabricante e modelo de simulaçêo podem divergir:
 a aula 8 ensina a anotar a diferença.
 """
 import sys

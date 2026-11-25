@@ -165,7 +165,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>G1 parado 1 s · 7 sensores (4 do arquivo + 3 acrescentados)\n  imu-torso-angular-velocity         [0. 0. 0.]\n  imu-torso-linear-acceleration      [0.  0.  9.8]\n  imu-pelvis-angular-velocity        [0. 0. 0.]\n  imu-pelvis-linear-acceleration     [0.  0.  9.8]\nIMU (pelve): inclinação lateral 0.0° · frente/trás -0.1°\nsensor de força no tornozelo: pé esquerdo 158 N · pé direito 157 N\ncontatos com o chão:          pé esquerdo 164 N · pé direito 163 N\nsoma dos contatos / peso do robô (327 N): 1.00</pre><p>Giroscopios en cero, acelerómetros en 9,8 hacia arriba, inclinación cercana a cero y el peso repartido entre los dos pies.</p>"
+            "html": "<pre>G1 parado 1 s · 7 sensores (4 do arquivo + 3 acrescentados)\n  imu-torso-angular-velocity         [0. 0. 0.]\n  imu-torso-linear-acceleration      [0.  0.  9.8]\n  imu-pelvis-angular-velocity        [0. 0. 0.]\n  imu-pelvis-linear-acceleration     [0.  0.  9.8]\nIMU (pelve): inclinaçêo lateral 0.0° · frente/trás -0.1°\nsensor de força no tornozelo: pé esquerdo 158 N · pé direito 157 N\ncontatos com o chêo:          pé esquerdo 164 N · pé direito 163 N\nsoma dos contatos / peso do robô (327 N): 1.00</pre><p>Giroscopios en cero, acelerómetros en 9,8 hacia arriba, inclinación cercana a cero y el peso repartido entre los dos pies.</p>"
           },
           {
             "rot": "Error común: ¿9,8 es aceleración?",

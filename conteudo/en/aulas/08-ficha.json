@@ -141,7 +141,7 @@
         {
           "rot": "File · kit/ficha-modelo.md",
           "icone": "arquivo",
-          "conteudo": "# Ficha técnica — [robot] (version [base/EDU/…])\n\nData: [DD/MM/YYYY] · Simulation model: [Menagerie folder] @ [commit]\n\n| item | fabricante (fonte, data) | arquivo MJCF | medido no curso | diferença |\n|---|---|---|---|---|\n| graus de liberdade | [n] ([URL], [date]) | nu = [n] | — | [different version?] |\n| massa (kg) | [n] | [n] | — | [%] |\n| altura do CoM em pé (m) | — | [n] | — | — |\n| maior torque (N·m) | [n or \"not published\"] | [n] ([joint]) | agachado 90°: [n] | [%] |\n| sensores | [list from the sheet] | [n] no arquivo | + [added] | [what is missing] |\n| bateria | [mAh, S, h] | — | [Wh, derived calculation] | — |\n| computação | [CPU / Orin / Thor] | — | — | — |\n| equilíbrio sem controlador | — | — | fica com [n] N · cai com [n] N (0,2 s) | — |\n| estágio | [demo/piloto/produção] ([URL], [date]) | — | — | — |"
+          "conteudo": "# Ficha técnica — [robot] (version [base/EDU/…])\n\nData: [DD/MM/YYYY] · Simulation model: [Menagerie folder] @ [commit]\n\n| item | fabricante (fonte, data) | arquivo MJCF | medido no curso | diferença |\n|---|---|---|---|---|\n| graus de liberdade | [n] ([URL], [date]) | nu = [n] | — | [different version?] |\n| massa (kg) | [n] | [n] | — | [%] |\n| altura do CoM em pé (m) | — | [n] | — | — |\n| maior torque (N·m) | [n or \"not published\"] | [n] ([joint]) | agachado 90°: [n] | [%] |\n| sensores | [list from the sheet] | [n] no arquivo | + [added] | [what is missing] |\n| bateria | [mAh, S, h] | — | [Wh, derived calculation] | — |\n| computaçêo | [CPU / Orin / Thor] | — | — | — |\n| equilíbrio sem controlador | — | — | fica com [n] N · cai com [n] N (0,2 s) | — |\n| estágio | [demo/piloto/produçêo] ([URL], [date]) | — | — | — |"
         }
       ],
       "saida": {
@@ -153,7 +153,7 @@
           },
           {
             "rot": "Common mistake: folder outside the sparse-checkout",
-            "html": "<pre>ERRO: não achei apptronik_apollo/scene.xml (nem em ~/fth/mujoco_menagerie). Rode a preparação da aula 2.\nsaída: 1</pre><p>The workbench downloaded only 4 humanoids. To compare another one, add the folder: <code>git -C ~/fth/mujoco_menagerie sparse-checkout add apptronik_apollo</code>, then run it again.</p>"
+            "html": "<pre>ERRO: nêo achei apptronik_apollo/scene.xml (nem em ~/fth/mujoco_menagerie). Rode a preparaçêo da aula 2.\nsaída: 1</pre><p>The workbench downloaded only 4 humanoids. To compare another one, add the folder: <code>git -C ~/fth/mujoco_menagerie sparse-checkout add apptronik_apollo</code>, then run it again.</p>"
           }
         ]
       }

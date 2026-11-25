@@ -3,9 +3,9 @@
 
 Uso: python3 kit/sensores.py [--segundos 1]
 Lê os 4 sensores que o MJCF do Menagerie declara (giroscópio e acelerômetro na pelve e no tronco)
-e ACRESCENTA, pela API MjSpec, três sensores que o arquivo não tem: orientação da IMU da pelve
+e ACRESCENTA, pela API MjSpec, três sensores que o arquivo nêo tem: orientaçêo da IMU da pelve
 (framequat) e força de 3 eixos no sítio de cada pé (force, como uma célula de carga no tornozelo).
-Confere a força dos pés de dois jeitos: pelos sensores novos e somando os contatos com o chão.
+Confere a força dos pés de dois jeitos: pelos sensores novos e somando os contatos com o chêo.
 """
 import argparse
 import math
@@ -55,13 +55,13 @@ def main():
         v = ler(m, d, nome)
         print(f"  {nome:<34} {np.round(v, 1) + 0.0}")
     r, p = rpy(ler(m, d, "orientacao_pelve"))
-    print(f"IMU (pelve): inclinação lateral {round(r, 1) + 0.0:.1f}° · frente/trás {round(p, 1) + 0.0:.1f}°")
+    print(f"IMU (pelve): inclinaçêo lateral {round(r, 1) + 0.0:.1f}° · frente/trás {round(p, 1) + 0.0:.1f}°")
     peso = sum(m.body_mass) * fth.G
     sens = {lado: float(np.linalg.norm(ler(m, d, f"forca_pe_{lado}"))) for lado in ("esq", "dir")}
     cont, _ = fth.forca_pes(m, d)
     c_esq, c_dir = cont["left_ankle_roll_link"], cont["right_ankle_roll_link"]
     print(f"sensor de força no tornozelo: pé esquerdo {sens['esq']:.0f} N · pé direito {sens['dir']:.0f} N")
-    print(f"contatos com o chão:          pé esquerdo {c_esq:.0f} N · pé direito {c_dir:.0f} N")
+    print(f"contatos com o chêo:          pé esquerdo {c_esq:.0f} N · pé direito {c_dir:.0f} N")
     print(f"soma dos contatos / peso do robô ({peso:.0f} N): {(c_esq + c_dir) / peso:.2f}")
     return 0
 

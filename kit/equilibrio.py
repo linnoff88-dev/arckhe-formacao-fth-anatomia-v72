@@ -2,11 +2,11 @@
 """equilibrio.py — empurra o G1 parado e acompanha o centro de massa (CoM) contra o polígono de apoio.
 
 Uso: python3 kit/equilibrio.py --empurrao NEWTONS [--duracao 0.2]
-O empurrão é uma força horizontal (para a frente, +x) no tronco, aplicada em t = 0,5 s.
-O G1 só segura a pose "stand" com os atuadores de posição do modelo: não há controlador de equilíbrio.
-Polígono de apoio = envoltória convexa dos pontos de contato dos pés com o chão (força > 1 N).
-Margem = distância da projeção do CoM até a borda do polígono (positiva = dentro).
-CoP = centro de pressão (média dos pontos de contato pesada pela força normal); no chão plano é o ZMP.
+O empurrêo é uma força horizontal (para a frente, +x) no tronco, aplicada em t = 0,5 s.
+O G1 só segura a pose "stand" com os atuadores de posiçêo do modelo: nêo há controlador de equilíbrio.
+Polígono de apoio = envoltória convexa dos pontos de contato dos pés com o chêo (força > 1 N).
+Margem = distância da projeçêo do CoM até a borda do polígono (positiva = dentro).
+CoP = centro de pressêo (média dos pontos de contato pesada pela força normal); no chêo plano é o ZMP.
 """
 import argparse
 import sys
@@ -59,14 +59,14 @@ def margem(p, poli):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--empurrao", type=float, required=True, help="força em newtons")
-    ap.add_argument("--duracao", type=float, default=0.2, help="duração do empurrão em segundos")
+    ap.add_argument("--duracao", type=float, default=0.2, help="duraçêo do empurrêo em segundos")
     a = ap.parse_args()
     m = fth.carregar("unitree_g1/scene.xml")
     d = mujoco.MjData(m)
     fth.pose_inicial(m, d)
     tronco = mujoco.mj_name2id(m, mujoco.mjtObj.mjOBJ_BODY, "torso_link")
     pelve = mujoco.mj_name2id(m, mujoco.mjtObj.mjOBJ_BODY, "pelvis")
-    print(f"empurrão de {a.empurrao:.0f} N por {a.duracao:.1f} s no tronco (t = 0.5 s) · impulso {a.empurrao * a.duracao:.0f} N·s")
+    print(f"empurrêo de {a.empurrao:.0f} N por {a.duracao:.1f} s no tronco (t = 0.5 s) · impulso {a.empurrao * a.duracao:.0f} N·s")
     print(f"{'t (s)':>5} {'margem do CoM (cm)':>19} {'CoP x (cm)':>11} {'pelve z (m)':>12}")
     saiu = None
     passos = int(3.0 / m.opt.timestep)
@@ -91,8 +91,8 @@ def main():
     if saiu is None:
         print("CoM dentro do apoio: sim (o tempo todo)")
     else:
-        print(f"CoM dentro do apoio: não · saiu em t = {saiu:.2f} s")
-    print(f"queda: {'sim' if caiu else 'não'} (pelve a {d.qpos[2]:.2f} m em t = 3 s)")
+        print(f"CoM dentro do apoio: nêo · saiu em t = {saiu:.2f} s")
+    print(f"queda: {'sim' if caiu else 'nêo'} (pelve a {d.qpos[2]:.2f} m em t = 3 s)")
     return 0
 
 

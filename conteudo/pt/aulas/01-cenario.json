@@ -2,11 +2,11 @@
   "slug": "cenario",
   "num": 1,
   "menu": "Cenário",
-  "titulo": "Humanoides em out/2026: demo, piloto e produção",
-  "titulo_curto": "Demo, piloto e produção",
+  "titulo": "Humanoides em out/2026: demo, piloto e produçêo",
+  "titulo_curto": "Demo, piloto e produçêo",
   "minutos": 15,
-  "lead": "Vídeo de humanoide sobra; robô entregue a quem paga, nem tanto. Antes de abrir qualquer modelo, você aprende a separar demo, piloto e produção com fonte e data, a ler o preço de um humanoide sem cair no número velho e a reconhecer as plataformas que um laboratório consegue comprar hoje.",
-  "objetivo": "classificar 6 humanoides em demo, piloto ou produção, cada um com fonte e data, sem repetir preço ou modelo desatualizado.",
+  "lead": "Vídeo de humanoide sobra; robô entregue a quem paga, nem tanto. Antes de abrir qualquer modelo, você aprende a separar demo, piloto e produçêo com fonte e data, a ler o preço de um humanoide sem cair no número velho e a reconhecer as plataformas que um laboratório consegue comprar hoje.",
+  "objetivo": "classificar 6 humanoides em demo, piloto ou produçêo, cada um com fonte e data, sem repetir preço ou modelo desatualizado.",
   "competencias": [
     "separar-demo-de-producao",
     "citar-fonte-e-data",
@@ -23,7 +23,7 @@
     },
     {
       "icone": "lupa",
-      "t": "Por que o G1 não tem um preço só"
+      "t": "Por que o G1 nêo tem um preço só"
     },
     {
       "icone": "check",
@@ -52,7 +52,7 @@
               "t": "1X NEO"
             }
           ],
-          "detalhe": "Só há vídeo, palco ou pré-venda. O Optimus V3 não tinha sido mostrado em público até ago/2026; a Tesla promete início de produção antes do fim de 2026 em comunicado à SEC. O 1X NEO está em pré-venda (US$ 20 mil) e a fábrica produz desde 30/04/2026, mas entrega a cliente não estava confirmada (relatado, 07/2026)."
+          "detalhe": "Só há vídeo, palco ou pré-venda. O Optimus V3 nêo tinha sido mostrado em público até ago/2026; a Tesla promete início de produçêo antes do fim de 2026 em comunicado à SEC. O 1X NEO está em pré-venda (US$ 20 mil) e a fábrica produz desde 30/04/2026, mas entrega a cliente nêo estava confirmada (relatado, 07/2026)."
         },
         {
           "icone": "alvo",
@@ -76,7 +76,7 @@
         },
         {
           "icone": "check",
-          "titulo": "Produção",
+          "titulo": "Produçêo",
           "sub": "à venda",
           "forte": true,
           "itens": [
@@ -108,7 +108,7 @@
           "detalhe": "Milhares por ano. A Unitree teria embarcado 5.511 humanoides em 2025 e abriu capital na bolsa STAR em 19/08/2026; a UBTech entrega o Walker S2 desde 11/2025 e mira 5.000 por ano em 2026. Ambos relatados, sem auditoria independente."
         }
       ],
-      "legenda": "Marque o estágio mais baixo que a sua fonte sustenta. Vídeo bonito não sobe ninguém de degrau.",
+      "legenda": "Marque o estágio mais baixo que a sua fonte sustenta. Vídeo bonito nêo sobe ninguém de degrau.",
       "dica": "Fatos com \"relatado\" vêm de imprensa ou agregador; os de loja oficial foram lidos em 19/10/2026."
     },
     {
@@ -120,12 +120,12 @@
           "titulo": "Preço único",
           "sub": "o G1 tem três",
           "texto": [
-            "O G1 base custa US$ 13,5 mil na loja da Unitree, mas vem <b>sem desenvolvimento secundário</b>: sem SDK, não serve para pesquisa. O EDU, que serve, é vendido sob consulta; revendas citam US$ 43,5 mil a 73,9 mil (relatado).",
-            "No programa da RoboCup 2026, a versão de competição tem preço público de US$ 35 mil. São três produtos com o mesmo nome."
+            "O G1 base custa US$ 13,5 mil na loja da Unitree, mas vem <b>sem desenvolvimento secundário</b>: sem SDK, nêo serve para pesquisa. O EDU, que serve, é vendido sob consulta; revendas citam US$ 43,5 mil a 73,9 mil (relatado).",
+            "No programa da RoboCup 2026, a versêo de competiçêo tem preço público de US$ 35 mil. Sêo três produtos com o mesmo nome."
           ],
           "exemplo": {
             "rot": "Como escrever",
-            "texto": "G1 base: US$ 13.500, sem SDK (unitree.com/g1, lido em 19/10/2026). EDU: sob consulta; preço varia por versão e revenda."
+            "texto": "G1 base: US$ 13.500, sem SDK (unitree.com/g1, lido em 19/10/2026). EDU: sob consulta; preço varia por versêo e revenda."
           }
         },
         {
@@ -133,14 +133,14 @@
           "sub": "Figure 01/02, de 2023–24",
           "texto": [
             "Material de 2024–25 ainda fala em Figure 01 e 02. Hoje é o Figure 03, com o Helix 02 controlando o corpo inteiro (o controlador de baixo nível roda a 1 kHz, segundo a Figure).",
-            "O Atlas atual é elétrico: a versão de produto saiu na CES 2026."
+            "O Atlas atual é elétrico: a versêo de produto saiu na CES 2026."
           ]
         },
         {
           "titulo": "Fornecedor que fechou",
           "sub": "K-Scale fechou (11/2025)",
           "texto": [
-            "A K-Scale Labs, que vendia o K-Bot aberto, <b>fechou em 11/2025</b> e abriu o resto do projeto (relatado). Não indique como fornecedor.",
+            "A K-Scale Labs, que vendia o K-Bot aberto, <b>fechou em 11/2025</b> e abriu o resto do projeto (relatado). Nêo indique como fornecedor.",
             "Plataformas baratas que existem: Unitree R1 (R1 AIR US$ 4.900, R1 US$ 5.900), Booster K1 (95 cm, 22 graus de liberdade), Berkeley Humanoid Lite (menos de US$ 5 mil em peças, relatado) e ToddlerBot (30 graus de liberdade, lista de peças pública)."
           ]
         },
@@ -149,7 +149,7 @@
           "sub": "competições",
           "texto": [
             "A meia-maratona de humanoides de Pequim (19/04/2026) foi vencida em 50:26 por um robô autônomo, contra 2:40:42 em 2025 (relatado); os Jogos Mundiais de Robôs Humanoides de agosto/2026 reuniram cerca de 2.056 robôs (relatado).",
-            "Recorde mostra avanço de locomoção, não que o robô trabalhe numa fábrica. Mercado e rodadas de investimento ficam no curso de VLA."
+            "Recorde mostra avanço de locomoçêo, nêo que o robô trabalhe numa fábrica. Mercado e rodadas de investimento ficam no curso de VLA."
           ]
         }
       ]
@@ -175,11 +175,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>  Unitree G1             falta: estágio, fonte, data\n  Unitree R1             falta: estágio, fonte, data\n  Booster K1             falta: estágio, fonte, data\n  Figure 03              falta: estágio, fonte, data\n  Boston Dynamics Atlas  falta: estágio, fonte, data\n  1X NEO                 falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produção 0\n6 robôs, 0 com fonte e data\nsaída: 1</pre><p>A tabela vazia reprova: 0 de 6 e código de saída 1. É assim que o critério falha antes do trabalho.</p>"
+            "html": "<pre>  Unitree G1             falta: estágio, fonte, data\n  Unitree R1             falta: estágio, fonte, data\n  Booster K1             falta: estágio, fonte, data\n  Figure 03              falta: estágio, fonte, data\n  Boston Dynamics Atlas  falta: estágio, fonte, data\n  1X NEO                 falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produçêo 0\n6 robôs, 0 com fonte e data\nsaída: 1</pre><p>A tabela vazia reprova: 0 de 6 e código de saída 1. É assim que o critério falha antes do trabalho.</p>"
           },
           {
             "rot": "Erro comum: \"em breve\" e vídeo como fonte",
-            "html": "<pre>  Tesla Optimus V3       falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produção 0\n1 robô, 0 com fonte e data\nsaída: 1</pre><p>\"Em breve\" não é estágio, \"vi num vídeo\" não é URL e \"2026\" sozinho não é data. Para o Optimus V3, a resposta honesta é <b>demo</b>, com a fonte da Tesla e a data.</p>"
+            "html": "<pre>  Tesla Optimus V3       falta: estágio, fonte, data\nestágios: demo 0 · piloto 0 · produçêo 0\n1 robô, 0 com fonte e data\nsaída: 1</pre><p>\"Em breve\" nêo é estágio, \"vi num vídeo\" nêo é URL e \"2026\" sozinho nêo é data. Para o Optimus V3, a resposta honesta é <b>demo</b>, com a fonte da Tesla e a data.</p>"
           }
         ]
       }
@@ -187,7 +187,7 @@
     {
       "tipo": "codigo",
       "titulo": "Depois de preencher",
-      "sub": "Abra ~/fth/fichas.csv, preencha estágio, fonte (https://), data e a evidência em poucas palavras. As fontes estão no diagrama, nas armadilhas e nos links do fim da aula.",
+      "sub": "Abra ~/fth/fichas.csv, preencha estágio, fonte (https://), data e a evidência em poucas palavras. As fontes estêo no diagrama, nas armadilhas e nos links do fim da aula.",
       "blocos": [
         {
           "rot": "Terminal · conferir a sua tabela",
@@ -200,7 +200,7 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>  Unitree G1             produção  19/10/2026\n  Unitree R1             produção  19/10/2026\n  Booster K1             produção  19/10/2026\n  Figure 03              piloto    27/01/2026\n  Boston Dynamics Atlas  piloto    01/2026\n  1X NEO                 demo      04/2026\nestágios: demo 1 · piloto 2 · produção 3\n6 robôs, 6 com fonte e data\nsaída: 0</pre><p>Uma resposta possível, com as fontes desta aula; a data é a da fonte usada (no Figure 03, o anúncio do Helix 02; a chegada à BMW, ~06/2026, é relatada). Você pode discordar de um estágio (o Atlas já é produção?), desde que a evidência sustente.</p>"
+            "html": "<pre>  Unitree G1             produçêo  19/10/2026\n  Unitree R1             produçêo  19/10/2026\n  Booster K1             produçêo  19/10/2026\n  Figure 03              piloto    27/01/2026\n  Boston Dynamics Atlas  piloto    01/2026\n  1X NEO                 demo      04/2026\nestágios: demo 1 · piloto 2 · produçêo 3\n6 robôs, 6 com fonte e data\nsaída: 0</pre><p>Uma resposta possível, com as fontes desta aula; a data é a da fonte usada (no Figure 03, o anúncio do Helix 02; a chegada à BMW, ~06/2026, é relatada). Você pode discordar de um estágio (o Atlas já é produçêo?), desde que a evidência sustente.</p>"
           }
         ]
       }
@@ -208,7 +208,7 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Tudo roda em Python puro: ainda não precisa do MuJoCo.",
+      "sub": "Tudo roda em Python puro: ainda nêo precisa do MuJoCo.",
       "exercicios": [
         {
           "id": "e1",
@@ -229,38 +229,38 @@
           "titulo": "E3 · Um sétimo robô",
           "min": "10 min",
           "texto": "Acrescente uma linha com um humanoide que você viu esta semana (vídeo, notícia, post). Ache a fonte primária e a data antes de escolher o estágio.",
-          "pronto": "o conferidor imprime <code>7 robôs, 7 com fonte e data</code>; se você não achou fonte, a linha fica reprovada e isso também é resposta."
+          "pronto": "o conferidor imprime <code>7 robôs, 7 com fonte e data</code>; se você nêo achou fonte, a linha fica reprovada e isso também é resposta."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Um laboratório quer o Unitree G1 para escrever o próprio controlador. Qual versão serve?",
+          "p": "Um laboratório quer o Unitree G1 para escrever o próprio controlador. Qual versêo serve?",
           "opcoes": [
             "A base de US$ 13,5 mil, a mais barata da loja.",
             "A EDU, vendida sob consulta, que traz o SDK.",
             "Qualquer uma: o SDK é igual em todas.",
-            "Só a de competição da RoboCup."
+            "Só a de competiçêo da RoboCup."
           ],
           "certa": 1,
-          "explica": "O base vem sem desenvolvimento secundário (sem SDK). Para programar o robô, a versão é a EDU, sob consulta. O preço depende da versão e da revenda.",
+          "explica": "O base vem sem desenvolvimento secundário (sem SDK). Para programar o robô, a versêo é a EDU, sob consulta. O preço depende da versêo e da revenda.",
           "ref": "passos",
           "cert": true
         },
         {
           "p": "Uma empresa publica um vídeo do robô dobrando roupa e abre pré-venda. Qual estágio a evidência sustenta?",
           "opcoes": [
-            "Produção, porque já existe preço público na loja.",
+            "Produçêo, porque já existe preço público na loja.",
             "Piloto, porque há clientes pagando sinal da pré-venda.",
             "Demo, até haver entrega a cliente confirmada.",
             "Escala, porque a fábrica já está produzindo."
           ],
           "certa": 2,
-          "explica": "Pré-venda e vídeo ainda são demo. Piloto pede o robô trabalhando num cliente; produção pede entrega em série a quem paga. É o caso do 1X NEO em 2026.",
+          "explica": "Pré-venda e vídeo ainda sêo demo. Piloto pede o robô trabalhando num cliente; produçêo pede entrega em série a quem paga. É o caso do 1X NEO em 2026.",
           "ref": "diagrama"
         },
         {
@@ -272,19 +272,19 @@
             "A Unitree lista o R1 AIR a US$ 4.900 e o R1 a US$ 5.900 (19/10/2026)."
           ],
           "certa": 3,
-          "explica": "Só a do R1 tem fonte primária e data. O Optimus V3 não tinha aparecido em público até ago/2026, o Figure 03 não tem venda ao consumidor e o G1 base vem sem SDK.",
+          "explica": "Só a do R1 tem fonte primária e data. O Optimus V3 nêo tinha aparecido em público até ago/2026, o Figure 03 nêo tem venda ao consumidor e o G1 base vem sem SDK.",
           "ref": "passos"
         },
         {
           "p": "Segundo a imprensa, a meia-maratona de Pequim de 2026 foi vencida em 50:26. O que esse número prova?",
           "opcoes": [
             "Que humanoides já fazem turno completo em fábrica.",
-            "Que a locomoção autônoma avançou muito em um ano.",
+            "Que a locomoçêo autônoma avançou muito em um ano.",
             "Que o robô vencedor está à venda.",
-            "Que corrida e manipulação têm o mesmo nível."
+            "Que corrida e manipulaçêo têm o mesmo nível."
           ],
           "certa": 1,
-          "explica": "Em 2025 o tempo foi 2:40:42. O salto mostra locomoção, não trabalho útil nem produto à venda. Recorde é vitrine; estágio de produto se prova com entrega.",
+          "explica": "Em 2025 o tempo foi 2:40:42. O salto mostra locomoçêo, nêo trabalho útil nem produto à venda. Recorde é vitrine; estágio de produto se prova com entrega.",
           "ref": "passos"
         }
       ]
@@ -295,15 +295,15 @@
       "itens": [
         {
           "t": "Estágio",
-          "texto": "Demo, piloto, produção, escala: marque o degrau mais baixo que a fonte sustenta."
+          "texto": "Demo, piloto, produçêo, escala: marque o degrau mais baixo que a fonte sustenta."
         },
         {
           "t": "Preço",
-          "texto": "Sempre com versão, fonte e data; o G1 base não tem SDK."
+          "texto": "Sempre com versêo, fonte e data; o G1 base nêo tem SDK."
         },
         {
           "t": "Velho",
-          "texto": "Figure 01/02, K-Scale e o G1 a 16 mil são de antes de 2026."
+          "texto": "Figure 01/02, K-Scale e o G1 a 16 mil sêo de antes de 2026."
         }
       ]
     },

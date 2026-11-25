@@ -3,7 +3,7 @@
   "num": 7,
   "menu": "Energia",
   "titulo": "Cérebro e bateria: o que roda onde",
-  "titulo_curto": "Computação e bateria",
+  "titulo_curto": "Computaçêo e bateria",
   "minutos": 15,
   "lead": "Um humanoide roda várias camadas de controle ao mesmo tempo, cada uma num ritmo, e carrega a própria energia. Nesta aula você vê o que vem de fábrica no G1, no H2 e no K1, o tempo que cada camada tem por ciclo e faz a conta de autonomia a partir da ficha, separando o que é dado do fabricante do que é conta derivada.",
   "objetivo": "calcular a autonomia e o orçamento de tempo de cada camada de controle de um humanoide a partir da ficha do fabricante.",
@@ -48,7 +48,7 @@
               "t": "100–200 ms"
             }
           ],
-          "detalhe": "O modelo que vê, lê a instrução e decide o que fazer. No Helix da Figure, o sistema que pensa roda a 7–9 Hz (Figure, 2025). Assunto do curso de VLA."
+          "detalhe": "O modelo que vê, lê a instruçêo e decide o que fazer. No Helix da Figure, o sistema que pensa roda a 7–9 Hz (Figure, 2025). Assunto do curso de VLA."
         },
         {
           "icone": "robo",
@@ -60,7 +60,7 @@
               "t": "20 ms"
             }
           ],
-          "detalhe": "A rede treinada por RL que manda alvos de junta para andar ou imitar movimento. Cerca de 50 Hz é o típico nos repositórios citados na formação (o SONIC a 50 Hz é relatado). No Helix 02, a camada visuomotora emite alvos de junta a 200 Hz."
+          "detalhe": "A rede treinada por RL que manda alvos de junta para andar ou imitar movimento. Cerca de 50 Hz é o típico nos repositórios citados na formaçêo (o SONIC a 50 Hz é relatado). No Helix 02, a camada visuomotora emite alvos de junta a 200 Hz."
         },
         {
           "icone": "alvo",
@@ -73,7 +73,7 @@
               "t": "1–2 ms"
             }
           ],
-          "detalhe": "Transforma alvo de junta em torque, junta por junta, e segura o corpo entre duas decisões da política. Em geral roda no robô, no SDK do fabricante (síntese da pesquisa da formação). O equivalente na Figure é outro bicho: o S0 do Helix 02, um controlador de corpo inteiro aprendido, a 1 kHz e com 10 milhões de parâmetros (Figure, 27/01/2026)."
+          "detalhe": "Transforma alvo de junta em torque, junta por junta, e segura o corpo entre duas decisões da política. Em geral roda no robô, no SDK do fabricante (síntese da pesquisa da formaçêo). O equivalente na Figure é outro bicho: o S0 do Helix 02, um controlador de corpo inteiro aprendido, a 1 kHz e com 10 milhões de parâmetros (Figure, 27/01/2026)."
         },
         {
           "icone": "chip",
@@ -85,21 +85,21 @@
               "t": "mais rápido ainda"
             }
           ],
-          "detalhe": "O driver de cada motor fecha a corrente dentro do atuador. Não é programado por quem treina política; o curso 4 mostra onde ele aparece no SDK."
+          "detalhe": "O driver de cada motor fecha a corrente dentro do atuador. Nêo é programado por quem treina política; o curso 4 mostra onde ele aparece no SDK."
         }
       ],
       "legenda": "Quanto mais baixo, mais rápido e mais perto do motor. Uma camada lenta nunca pode segurar o corpo sozinha."
     },
     {
       "tipo": "passos",
-      "titulo": "Computação e bateria, com fonte",
+      "titulo": "Computaçêo e bateria, com fonte",
       "sub": "Clique em cada item.",
       "passos": [
         {
           "titulo": "O que vem de fábrica",
           "sub": "CPU, Orin, Thor",
           "texto": [
-            "O G1 vem com CPU de 8 núcleos; o módulo de alta computação (Orin e afins) é opcional e só no EDU. O H2 traz um Intel i5 e, no EDU, um segundo PC com i7. O Booster K1 anuncia 117 TOPS (unitree.com, booster.tech, lidos em 19/10/2026).",
+            "O G1 vem com CPU de 8 núcleos; o módulo de alta computaçêo (Orin e afins) é opcional e só no EDU. O H2 traz um Intel i5 e, no EDU, um segundo PC com i7. O Booster K1 anuncia 117 TOPS (unitree.com, booster.tech, lidos em 19/10/2026).",
             "Jetson Thor de catálogo, por enquanto, só no Booster T2 (relatado, 07/2026)."
           ]
         },
@@ -115,7 +115,7 @@
           "titulo": "Wh = V × Ah",
           "sub": "a conta",
           "texto": [
-            "A Unitree dá para o G1 9.000 mAh, pack 13S e cerca de 2 h. Não dá o Wh. Com 3,7 V nominais por célula de lítio: 13 × 3,7 V = 48,1 V; 48,1 V × 9 Ah ≈ 433 Wh. É <b>conta derivada</b>: escreva assim.",
+            "A Unitree dá para o G1 9.000 mAh, pack 13S e cerca de 2 h. Nêo dá o Wh. Com 3,7 V nominais por célula de lítio: 13 × 3,7 V = 48,1 V; 48,1 V × 9 Ah ≈ 433 Wh. É <b>conta derivada</b>: escreva assim.",
             "Para o H2 a Unitree já dá 0,972 kWh (15 Ah, 75,6 V máximo)."
           ]
         },
@@ -136,7 +136,7 @@
     {
       "tipo": "codigo",
       "titulo": "As contas no terminal",
-      "sub": "O autonomia.py faz a conta do pack (quando a ficha não dá Wh), a autonomia e o orçamento de cada frequência.",
+      "sub": "O autonomia.py faz a conta do pack (quando a ficha nêo dá Wh), a autonomia e o orçamento de cada frequência.",
       "blocos": [
         {
           "rot": "Terminal · G1, H2 e orçamento de laço",
@@ -161,7 +161,7 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Contas com a ficha na mão.",
+      "sub": "Contas com a ficha na mêo.",
       "exercicios": [
         {
           "id": "e1",
@@ -189,18 +189,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Por que o controle PD de junta roda no robô e não num servidor na rede?",
+          "p": "Por que o controle PD de junta roda no robô e nêo num servidor na rede?",
           "opcoes": [
-            "Porque a rede sem fio não aguenta o volume de dados dos motores.",
+            "Porque a rede sem fio nêo aguenta o volume de dados dos motores.",
             "Porque um servidor na rede custaria caro demais para o laboratório.",
             "Porque o fabricante proíbe rodar controle fora do robô.",
-            "Porque a 500 Hz–1 kHz ele tem 1 a 2 ms, e a rede não garante isso."
+            "Porque a 500 Hz–1 kHz ele tem 1 a 2 ms, e a rede nêo garante isso."
           ],
           "certa": 3,
-          "explica": "A camada que segura o corpo não pode esperar. Camadas lentas (política a 50 Hz, VLA a 5–10 Hz) aguentam mais atraso; o PD, não.",
+          "explica": "A camada que segura o corpo nêo pode esperar. Camadas lentas (política a 50 Hz, VLA a 5–10 Hz) aguentam mais atraso; o PD, nêo.",
           "ref": "diagrama",
           "cert": true
         },
@@ -210,19 +210,19 @@
             "\"432 Wh\", como aparecia num curso de 2025, sem citar fonte.",
             "\"Cerca de 433 Wh, conta derivada (13S × 3,7 V × 9 Ah)\", citando a ficha.",
             "\"500 Wh\", arredondando para cima para dar margem de segurança na conta.",
-            "\"Não se sabe\", porque a Unitree não publica o valor em Wh."
+            "\"Nêo se sabe\", porque a Unitree nêo publica o valor em Wh."
           ],
           "certa": 1,
-          "explica": "A ficha dá mAh, pack e autonomia, não Wh. Fazer a conta é legítimo, desde que diga que é derivada e qual tensão por célula você supôs.",
+          "explica": "A ficha dá mAh, pack e autonomia, nêo Wh. Fazer a conta é legítimo, desde que diga que é derivada e qual tensêo por célula você supôs.",
           "ref": "passos"
         },
         {
-          "p": "Qual afirmação sobre computação de bordo está de acordo com as fichas lidas em 19/10/2026?",
+          "p": "Qual afirmaçêo sobre computaçêo de bordo está de acordo com as fichas lidas em 19/10/2026?",
           "opcoes": [
             "O G1 base sai de fábrica com um Jetson Thor de 128 GB.",
             "Todo humanoide de pesquisa usa Jetson Orin de fábrica em 2026.",
-            "G1 com CPU de 8 núcleos; módulo de alta computação opcional no EDU.",
-            "O H2 não tem computador próprio e depende de um PC externo ligado."
+            "G1 com CPU de 8 núcleos; módulo de alta computaçêo opcional no EDU.",
+            "O H2 nêo tem computador próprio e depende de um PC externo ligado."
           ],
           "certa": 2,
           "explica": "G1: CPU de 8 núcleos, Orin opcional no EDU. H2: Intel i5 e i7. Thor de catálogo só no Booster T2 (relatado).",

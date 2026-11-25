@@ -145,7 +145,7 @@
         {
           "rot": "Terminal · from 0° to 120°",
           "icone": "terminal",
-          "conteudo": "F=${FTH:-$HOME/fth}; cd $F/anatomia && . $F/.venv/bin/activate\nfor k in 0 30 60 90 120; do\n  echo \"joelho $k°: $(python3 kit/torque_agachado.py --joelho $k | grep -E '^joelhos|^ATENÇÃO' | tr '\\n' ' ')\"\ndone"
+          "conteudo": "F=${FTH:-$HOME/fth}; cd $F/anatomia && . $F/.venv/bin/activate\nfor k in 0 30 60 90 120; do\n  echo \"joelho $k°: $(python3 kit/torque_agachado.py --joelho $k | grep -E '^joelhos|^ATENÇêO' | tr '\\n' ' ')\"\ndone"
         }
       ],
       "saida": {
@@ -153,11 +153,11 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>joelho dobrado 90° · altura da pelve 0.59 m · 8 contatos com o chão\njunta                         torque (N·m)  limite  % do limite\nleft_knee_joint                         31     139          22%\nright_knee_joint                        31     139          22%\nleft_hip_pitch_joint                     2      88           2%\nright_hip_pitch_joint                    2      88           2%\nconferência mj_inverse (left_knee_joint): 31 N·m\njoelhos: esquerdo 31 N·m · direito 31 N·m\nmaior torque: left_knee_joint 31 N·m</pre><p>31 N·m in each knee, 22% of the model's ceiling. Simulating at rest and mj_inverse give the same value: that is the sign the pose is in equilibrium.</p>"
+            "html": "<pre>joelho dobrado 90° · altura da pelve 0.59 m · 8 contatos com o chêo\njunta                         torque (N·m)  limite  % do limite\nleft_knee_joint                         31     139          22%\nright_knee_joint                        31     139          22%\nleft_hip_pitch_joint                     2      88           2%\nright_hip_pitch_joint                    2      88           2%\nconferência mj_inverse (left_knee_joint): 31 N·m\njoelhos: esquerdo 31 N·m · direito 31 N·m\nmaior torque: left_knee_joint 31 N·m</pre><p>31 N·m in each knee, 22% of the model's ceiling. Simulating at rest and mj_inverse give the same value: that is the sign the pose is in equilibrium.</p>"
           },
           {
             "rot": "The sweep and the common mistake",
-            "html": "<pre>joelho 0°: joelhos: esquerdo 0 N·m · direito 0 N·m \njoelho 30°: joelhos: esquerdo 11 N·m · direito 11 N·m \njoelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m \njoelho 90°: joelhos: esquerdo 31 N·m · direito 31 N·m \njoelho 120°: ATENÇÃO: o robô caiu. joelhos: esquerdo 2 N·m · direito 2 N·m </pre><p>Torque rises almost in a straight line up to 90°. At 120° the robot fell and sat down, and the \"torque\" reading collapses: a fallen robot's number is not a measurement. That is why the script warns you when the pelvis drops below 0.4 m.</p>"
+            "html": "<pre>joelho 0°: joelhos: esquerdo 0 N·m · direito 0 N·m \njoelho 30°: joelhos: esquerdo 11 N·m · direito 11 N·m \njoelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m \njoelho 90°: joelhos: esquerdo 31 N·m · direito 31 N·m \njoelho 120°: ATENÇêO: o robô caiu. joelhos: esquerdo 2 N·m · direito 2 N·m </pre><p>Torque rises almost in a straight line up to 90°. At 120° the robot fell and sat down, and the \"torque\" reading collapses: a fallen robot's number is not a measurement. That is why the script warns you when the pelvis drops below 0.4 m.</p>"
           }
         ]
       }
@@ -179,7 +179,7 @@
           "titulo": "E2 · The knee curve",
           "min": "5 min",
           "texto": "Run the sweep and write down the knee torque at each angle in a table. At what angle does the robot stop squatting and fall?",
-          "pronto": "the sweep shows <code>joelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m</code> and the 120° line shows <code>ATENÇÃO: o robô caiu.</code>"
+          "pronto": "the sweep shows <code>joelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m</code> and the 120° line shows <code>ATENÇêO: o robô caiu.</code>"
         },
         {
           "id": "e3",

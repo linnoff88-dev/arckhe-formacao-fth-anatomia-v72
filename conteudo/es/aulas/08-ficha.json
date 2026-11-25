@@ -141,7 +141,7 @@
         {
           "rot": "Archivo · kit/ficha-modelo.md",
           "icone": "arquivo",
-          "conteudo": "# Ficha técnica — [robot] (versión [base/EDU/…])\n\nFecha: [DD/MM/AAAA] · Modelo de simulación: [carpeta de Menagerie] @ [commit]\n\n| item | fabricante (fuente, fecha) | arquivo MJCF | medido no curso | diferença |\n|---|---|---|---|---|\n| grados de libertad | [n] ([URL], [fecha]) | nu = [n] | — | [¿versión distinta?] |\n| masa (kg) | [n] | [n] | — | [%] |\n| altura del CoM de pie (m) | — | [n] | — | — |\n| mayor torque (N·m) | [n o \"no publicado\"] | [n] ([junta]) | agachado 90°: [n] | [%] |\n| sensores | [lista de la ficha] | [n] en el archivo | + [agregados] | [lo que falta] |\n| batería | [mAh, S, h] | — | [Wh, cálculo derivado] | — |\n| cómputo | [CPU / Orin / Thor] | — | — | — |\n| equilibrio sin controlador | — | — | se queda con [n] N · cae con [n] N (0,2 s) | — |\n| etapa | [demo/piloto/produção] ([URL], [fecha]) | — | — | — |"
+          "conteudo": "# Ficha técnica — [robot] (versión [base/EDU/…])\n\nFecha: [DD/MM/AAAA] · Modelo de simulación: [carpeta de Menagerie] @ [commit]\n\n| item | fabricante (fuente, fecha) | arquivo MJCF | medido no curso | diferença |\n|---|---|---|---|---|\n| grados de libertad | [n] ([URL], [fecha]) | nu = [n] | — | [¿versión distinta?] |\n| masa (kg) | [n] | [n] | — | [%] |\n| altura del CoM de pie (m) | — | [n] | — | — |\n| mayor torque (N·m) | [n o \"no publicado\"] | [n] ([junta]) | agachado 90°: [n] | [%] |\n| sensores | [lista de la ficha] | [n] en el archivo | + [agregados] | [lo que falta] |\n| batería | [mAh, S, h] | — | [Wh, cálculo derivado] | — |\n| cómputo | [CPU / Orin / Thor] | — | — | — |\n| equilibrio sin controlador | — | — | se queda con [n] N · cae con [n] N (0,2 s) | — |\n| etapa | [demo/piloto/produçêo] ([URL], [fecha]) | — | — | — |"
         }
       ],
       "saida": {
@@ -153,7 +153,7 @@
           },
           {
             "rot": "Error común: carpeta fuera del sparse-checkout",
-            "html": "<pre>ERRO: não achei apptronik_apollo/scene.xml (nem em ~/fth/mujoco_menagerie). Rode a preparação da aula 2.\nsaída: 1</pre><p>La bancada descargó solo 4 humanoides. Para comparar otro, agrega la carpeta: <code>git -C ~/fth/mujoco_menagerie sparse-checkout add apptronik_apollo</code>, y ejecútalo de nuevo.</p>"
+            "html": "<pre>ERRO: nêo achei apptronik_apollo/scene.xml (nem em ~/fth/mujoco_menagerie). Rode a preparaçêo da aula 2.\nsaída: 1</pre><p>La bancada descargó solo 4 humanoides. Para comparar otro, agrega la carpeta: <code>git -C ~/fth/mujoco_menagerie sparse-checkout add apptronik_apollo</code>, y ejecútalo de nuevo.</p>"
           }
         ]
       }

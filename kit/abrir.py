@@ -2,7 +2,7 @@
 """abrir.py — abre um humanoide do MuJoCo Menagerie e mostra o tamanho do modelo.
 
 Uso: python3 kit/abrir.py unitree_g1/scene.xml
-nq = coordenadas de posição (a base flutuante usa 7: x, y, z + quatérnio de 4)
+nq = coordenadas de posiçêo (a base flutuante usa 7: x, y, z + quatérnio de 4)
 nv = velocidades (a base usa 6: 3 lineares + 3 angulares)
 nu = atuadores (motores que você comanda)
 """
@@ -24,7 +24,7 @@ def main():
     print(f"modelo: {m.names.split(b'\0')[0].decode()} · arquivo {sys.argv[1]}")
     print(f"nq={m.nq} nv={m.nv} nu={m.nu}")
     print(f"juntas: {m.njnt} ({livres} base flutuante + {m.njnt - livres} articuladas) · corpos: {m.nbody - 1} · sensores: {m.nsensor}")
-    print(f"massa total do modelo: {sum(m.body_mass):.1f} kg · passo de simulação: {m.opt.timestep * 1000:.0f} ms")
+    print(f"massa total do modelo: {sum(m.body_mass):.1f} kg · passo de simulaçêo: {m.opt.timestep * 1000:.0f} ms")
     keys = [fth.nome(m, mujoco.mjtObj.mjOBJ_KEY, k) for k in range(m.nkey)]
     print(f"poses salvas (keyframes): {', '.join(keys) if keys else 'nenhuma'}")
     print(f"altura da base na pose inicial: {d.qpos[2]:.2f} m" if livres else "sem base flutuante")

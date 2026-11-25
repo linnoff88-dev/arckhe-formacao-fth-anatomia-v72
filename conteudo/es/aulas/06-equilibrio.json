@@ -149,11 +149,11 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>empurrão de 40 N por 0.2 s no tronco (t = 0.5 s) · impulso 8 N·s\nt (s)  margem do CoM (cm)  CoP x (cm)  pelve z (m)\n 0.00                 5.3         0.1         0.79\n 0.25                 5.3         0.4         0.79\n 0.50                 5.3         0.3         0.79\n 0.75                -8.1        12.0         0.79\n 1.00                -5.8        12.1         0.79\n 1.25                -8.1        12.2         0.79\n 1.50                -3.4        -4.8         0.79\n 1.75                -1.2        -4.8         0.79\n 2.00                -6.7        -4.8         0.79\n 2.25               -17.4        -4.7         0.76\n 2.50               -39.6        -4.5         0.64\n 2.75               -68.4        -8.4         0.15\n 3.00               -68.9       -11.4         0.06\nCoM dentro do apoio: não · saiu em t = 0.73 s\nqueda: sim (pelve a 0.06 m em t = 3 s)</pre><p>El CoP va a 12 cm (punta de los pies), luego a -4,8 cm (talón); la pelvis solo se desploma después de 2,25 s, cuando el robot cae hacia atrás.</p>"
+            "html": "<pre>empurrêo de 40 N por 0.2 s no tronco (t = 0.5 s) · impulso 8 N·s\nt (s)  margem do CoM (cm)  CoP x (cm)  pelve z (m)\n 0.00                 5.3         0.1         0.79\n 0.25                 5.3         0.4         0.79\n 0.50                 5.3         0.3         0.79\n 0.75                -8.1        12.0         0.79\n 1.00                -5.8        12.1         0.79\n 1.25                -8.1        12.2         0.79\n 1.50                -3.4        -4.8         0.79\n 1.75                -1.2        -4.8         0.79\n 2.00                -6.7        -4.8         0.79\n 2.25               -17.4        -4.7         0.76\n 2.50               -39.6        -4.5         0.64\n 2.75               -68.4        -8.4         0.15\n 3.00               -68.9       -11.4         0.06\nCoM dentro do apoio: nêo · saiu em t = 0.73 s\nqueda: sim (pelve a 0.06 m em t = 3 s)</pre><p>El CoP va a 12 cm (punta de los pies), luego a -4,8 cm (talón); la pelvis solo se desploma después de 2,25 s, cuando el robot cae hacia atrás.</p>"
           },
           {
             "rot": "Error común: CoM fuera = caída",
-            "html": "<pre>10 N → CoM dentro do apoio: sim  queda: não  \n15 N → CoM dentro do apoio: sim  queda: não  \n20 N → CoM dentro do apoio: não · saiu em t = 1.40 s queda: não  \n25 N → CoM dentro do apoio: não · saiu em t = 1.35 s queda: não  \n30 N → CoM dentro do apoio: não · saiu em t = 0.81 s queda: não  \n35 N → CoM dentro do apoio: não · saiu em t = 0.76 s queda: sim  \n40 N → CoM dentro do apoio: não · saiu em t = 0.73 s queda: sim  </pre><p>De 20 a 30 N el CoM sale del apoyo y el robot no cae. Quien mide el equilibrio solo por la posición del CoM se equivoca de 20 a 30 N; hay que mirar también la velocidad y lo que pasa después.</p>"
+            "html": "<pre>10 N → CoM dentro do apoio: sim  queda: nêo  \n15 N → CoM dentro do apoio: sim  queda: nêo  \n20 N → CoM dentro do apoio: nêo · saiu em t = 1.40 s queda: nêo  \n25 N → CoM dentro do apoio: nêo · saiu em t = 1.35 s queda: nêo  \n30 N → CoM dentro do apoio: nêo · saiu em t = 0.81 s queda: nêo  \n35 N → CoM dentro do apoio: nêo · saiu em t = 0.76 s queda: sim  \n40 N → CoM dentro do apoio: nêo · saiu em t = 0.73 s queda: sim  </pre><p>De 20 a 30 N el CoM sale del apoyo y el robot no cae. Quien mide el equilibrio solo por la posición del CoM se equivoca de 20 a 30 N; hay que mirar también la velocidad y lo que pasa después.</p>"
           }
         ]
       }
@@ -168,21 +168,21 @@
           "titulo": "E1 · Empujón que derriba",
           "min": "3 min",
           "texto": "Ejecuta el bloque de 40 N y describe el movimiento leyendo las columnas de CoP y pelvis.",
-          "pronto": "<code>python3 kit/equilibrio.py --empurrao 40</code> termina en <code>CoM dentro do apoio: não · saiu em t = 0.73 s</code> y <code>queda: sim</code>."
+          "pronto": "<code>python3 kit/equilibrio.py --empurrao 40</code> termina en <code>CoM dentro do apoio: nêo · saiu em t = 0.73 s</code> y <code>queda: sim</code>."
         },
         {
           "id": "e2",
           "titulo": "E2 · Empujón que aguanta",
           "min": "3 min",
           "texto": "Repite con 15 N.",
-          "pronto": "<code>python3 kit/equilibrio.py --empurrao 15 | tail -2</code> → <code>CoM dentro do apoio: sim (o tempo todo)</code> y <code>queda: não</code>."
+          "pronto": "<code>python3 kit/equilibrio.py --empurrao 15 | tail -2</code> → <code>CoM dentro do apoio: sim (o tempo todo)</code> y <code>queda: nêo</code>."
         },
         {
           "id": "e3",
           "titulo": "E3 · Impulso, no fuerza",
           "min": "5 min",
           "texto": "Ejecuta 40 N por 0,1 s y 80 N por 0,1 s. Compara con 40 N por 0,2 s: ¿lo que importa es la fuerza o el producto fuerza × tiempo?",
-          "pronto": "<code>--empurrao 40 --duracao 0.1</code> termina en <code>queda: não</code> y <code>--empurrao 80 --duracao 0.1</code> en <code>queda: sim</code>; tú escribiste los tres impulsos (4, 8 y 8 N·s)."
+          "pronto": "<code>--empurrao 40 --duracao 0.1</code> termina en <code>queda: nêo</code> y <code>--empurrao 80 --duracao 0.1</code> en <code>queda: sim</code>; tú escribiste los tres impulsos (4, 8 y 8 N·s)."
         }
       ]
     },

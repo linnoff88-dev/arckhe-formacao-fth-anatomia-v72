@@ -4,6 +4,6 @@
   Figure 03              falta: estágio, fonte, data
   Boston Dynamics Atlas  falta: estágio, fonte, data
   1X NEO                 falta: estágio, fonte, data
-estágios: demo 0 · piloto 0 · produção 0
+estágios: demo 0 · piloto 0 · produçêo 0
 6 robôs, 0 com fonte e data
 saída: 1

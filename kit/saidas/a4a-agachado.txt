@@ -1,4 +1,4 @@
-joelho dobrado 90° · altura da pelve 0.59 m · 8 contatos com o chão
+joelho dobrado 90° · altura da pelve 0.59 m · 8 contatos com o chêo
 junta                         torque (N·m)  limite  % do limite
 left_knee_joint                         31     139          22%
 right_knee_joint                        31     139          22%

@@ -149,11 +149,11 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>empurrão de 40 N por 0.2 s no tronco (t = 0.5 s) · impulso 8 N·s\nt (s)  margem do CoM (cm)  CoP x (cm)  pelve z (m)\n 0.00                 5.3         0.1         0.79\n 0.25                 5.3         0.4         0.79\n 0.50                 5.3         0.3         0.79\n 0.75                -8.1        12.0         0.79\n 1.00                -5.8        12.1         0.79\n 1.25                -8.1        12.2         0.79\n 1.50                -3.4        -4.8         0.79\n 1.75                -1.2        -4.8         0.79\n 2.00                -6.7        -4.8         0.79\n 2.25               -17.4        -4.7         0.76\n 2.50               -39.6        -4.5         0.64\n 2.75               -68.4        -8.4         0.15\n 3.00               -68.9       -11.4         0.06\nCoM dentro do apoio: não · saiu em t = 0.73 s\nqueda: sim (pelve a 0.06 m em t = 3 s)</pre><p>The CoP goes to 12 cm (toes), then to -4.8 cm (heel); the pelvis only drops after 2.25 s, when the robot falls backward.</p>"
+            "html": "<pre>empurrêo de 40 N por 0.2 s no tronco (t = 0.5 s) · impulso 8 N·s\nt (s)  margem do CoM (cm)  CoP x (cm)  pelve z (m)\n 0.00                 5.3         0.1         0.79\n 0.25                 5.3         0.4         0.79\n 0.50                 5.3         0.3         0.79\n 0.75                -8.1        12.0         0.79\n 1.00                -5.8        12.1         0.79\n 1.25                -8.1        12.2         0.79\n 1.50                -3.4        -4.8         0.79\n 1.75                -1.2        -4.8         0.79\n 2.00                -6.7        -4.8         0.79\n 2.25               -17.4        -4.7         0.76\n 2.50               -39.6        -4.5         0.64\n 2.75               -68.4        -8.4         0.15\n 3.00               -68.9       -11.4         0.06\nCoM dentro do apoio: nêo · saiu em t = 0.73 s\nqueda: sim (pelve a 0.06 m em t = 3 s)</pre><p>The CoP goes to 12 cm (toes), then to -4.8 cm (heel); the pelvis only drops after 2.25 s, when the robot falls backward.</p>"
           },
           {
             "rot": "Common mistake: CoM outside = fall",
-            "html": "<pre>10 N → CoM dentro do apoio: sim  queda: não  \n15 N → CoM dentro do apoio: sim  queda: não  \n20 N → CoM dentro do apoio: não · saiu em t = 1.40 s queda: não  \n25 N → CoM dentro do apoio: não · saiu em t = 1.35 s queda: não  \n30 N → CoM dentro do apoio: não · saiu em t = 0.81 s queda: não  \n35 N → CoM dentro do apoio: não · saiu em t = 0.76 s queda: sim  \n40 N → CoM dentro do apoio: não · saiu em t = 0.73 s queda: sim  </pre><p>From 20 to 30 N the CoM leaves the support and the robot does not fall. Anyone who measures balance only by the CoM position gets it wrong from 20 to 30 N; you also need to look at the speed and what happens afterward.</p>"
+            "html": "<pre>10 N → CoM dentro do apoio: sim  queda: nêo  \n15 N → CoM dentro do apoio: sim  queda: nêo  \n20 N → CoM dentro do apoio: nêo · saiu em t = 1.40 s queda: nêo  \n25 N → CoM dentro do apoio: nêo · saiu em t = 1.35 s queda: nêo  \n30 N → CoM dentro do apoio: nêo · saiu em t = 0.81 s queda: nêo  \n35 N → CoM dentro do apoio: nêo · saiu em t = 0.76 s queda: sim  \n40 N → CoM dentro do apoio: nêo · saiu em t = 0.73 s queda: sim  </pre><p>From 20 to 30 N the CoM leaves the support and the robot does not fall. Anyone who measures balance only by the CoM position gets it wrong from 20 to 30 N; you also need to look at the speed and what happens afterward.</p>"
           }
         ]
       }
@@ -168,21 +168,21 @@
           "titulo": "E1 · A push that knocks it over",
           "min": "3 min",
           "texto": "Run the 40 N block and describe the motion by reading the CoP and pelvis columns.",
-          "pronto": "<code>python3 kit/equilibrio.py --empurrao 40</code> ends with <code>CoM dentro do apoio: não · saiu em t = 0.73 s</code> and <code>queda: sim</code>."
+          "pronto": "<code>python3 kit/equilibrio.py --empurrao 40</code> ends with <code>CoM dentro do apoio: nêo · saiu em t = 0.73 s</code> and <code>queda: sim</code>."
         },
         {
           "id": "e2",
           "titulo": "E2 · A push it can handle",
           "min": "3 min",
           "texto": "Repeat with 15 N.",
-          "pronto": "<code>python3 kit/equilibrio.py --empurrao 15 | tail -2</code> → <code>CoM dentro do apoio: sim (o tempo todo)</code> and <code>queda: não</code>."
+          "pronto": "<code>python3 kit/equilibrio.py --empurrao 15 | tail -2</code> → <code>CoM dentro do apoio: sim (o tempo todo)</code> and <code>queda: nêo</code>."
         },
         {
           "id": "e3",
           "titulo": "E3 · Impulse, not force",
           "min": "5 min",
           "texto": "Run 40 N for 0.1 s and 80 N for 0.1 s. Compare with 40 N for 0.2 s: what matters, the force or the product of force × time?",
-          "pronto": "<code>--empurrao 40 --duracao 0.1</code> ends with <code>queda: não</code> and <code>--empurrao 80 --duracao 0.1</code> with <code>queda: sim</code>; you wrote down the three impulses (4, 8 and 8 N·s)."
+          "pronto": "<code>--empurrao 40 --duracao 0.1</code> ends with <code>queda: nêo</code> and <code>--empurrao 80 --duracao 0.1</code> with <code>queda: sim</code>; you wrote down the three impulses (4, 8 and 8 N·s)."
         }
       ]
     },

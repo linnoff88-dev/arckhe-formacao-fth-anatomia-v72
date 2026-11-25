@@ -5,7 +5,7 @@
   "titulo": "Abrir um humanoide no simulador",
   "titulo_curto": "Abrir o G1 no MuJoCo",
   "minutos": 15,
-  "lead": "A ficha técnica de um humanoide diz o que o fabricante quer mostrar; o arquivo de simulação diz o que o corpo é. Nesta aula você instala o MuJoCo, baixa só os humanoides do MuJoCo Menagerie e abre o Unitree G1, lendo do próprio arquivo quantas coordenadas, velocidades e motores ele tem.",
+  "lead": "A ficha técnica de um humanoide diz o que o fabricante quer mostrar; o arquivo de simulaçêo diz o que o corpo é. Nesta aula você instala o MuJoCo, baixa só os humanoides do MuJoCo Menagerie e abre o Unitree G1, lendo do próprio arquivo quantas coordenadas, velocidades e motores ele tem.",
   "objetivo": "instalar o MuJoCo 3.16 e o Menagerie e abrir o Unitree G1, lendo nq, nv e nu do próprio arquivo MJCF.",
   "competencias": [
     "montar-a-bancada-de-simulacao",
@@ -30,11 +30,11 @@
       "t": "Por que o G1 tem nq=36, nv=35 e nu=29"
     }
   ],
-  "hero_alt": "Monitor numa bancada escura mostrando um robô humanoide em simulação 3D sobre piso quadriculado.",
+  "hero_alt": "Monitor numa bancada escura mostrando um robô humanoide em simulaçêo 3D sobre piso quadriculado.",
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "Do arquivo ao passo de simulação",
+      "titulo": "Do arquivo ao passo de simulaçêo",
       "sub": "Clique em cada bloco.",
       "nos": [
         {
@@ -45,7 +45,7 @@
             {
               "icone": "arquivo",
               "t": "scene.xml",
-              "sub": "chão e luz"
+              "sub": "chêo e luz"
             },
             {
               "icone": "arquivo",
@@ -53,7 +53,7 @@
               "sub": "o corpo"
             }
           ],
-          "detalhe": "O formato nativo do MuJoCo. O scene.xml do Menagerie inclui o g1.xml (corpos, juntas, malhas, atuadores, sensores e a pose \"stand\") e acrescenta chão, céu e luz. URDF, o formato do ROS, também abre no MuJoCo, mas não descreve atuador nem sensor do jeito que o MJCF descreve."
+          "detalhe": "O formato nativo do MuJoCo. O scene.xml do Menagerie inclui o g1.xml (corpos, juntas, malhas, atuadores, sensores e a pose \"stand\") e acrescenta chêo, céu e luz. URDF, o formato do ROS, também abre no MuJoCo, mas nêo descreve atuador nem sensor do jeito que o MJCF descreve."
         },
         {
           "icone": "camadas",
@@ -83,7 +83,7 @@
               "t": "MjData: qpos, qvel, ctrl, sensordata"
             }
           ],
-          "detalhe": "MjModel é o corpo e não muda durante a simulação. MjData é o estado: posições (qpos), velocidades (qvel), comandos (ctrl), leituras de sensor. Todo script do curso lê um e escreve no outro."
+          "detalhe": "MjModel é o corpo e nêo muda durante a simulaçêo. MjData é o estado: posições (qpos), velocidades (qvel), comandos (ctrl), leituras de sensor. Todo script do curso lê um e escreve no outro."
         },
         {
           "icone": "play",
@@ -95,7 +95,7 @@
               "t": "timestep 0,002 s"
             }
           ],
-          "detalhe": "Cada mj_step avança 2 ms no G1 do Menagerie (integrador implicitfast). Um segundo de simulação são 500 passos; em CPU, o G1 parado roda bem mais rápido que o tempo real."
+          "detalhe": "Cada mj_step avança 2 ms no G1 do Menagerie (integrador implicitfast). Um segundo de simulaçêo sêo 500 passos; em CPU, o G1 parado roda bem mais rápido que o tempo real."
         }
       ],
       "legenda": "Ficha do fabricante e arquivo podem divergir: a aula 8 ensina a anotar a diferença."
@@ -109,7 +109,7 @@
           "titulo": "nq = 36",
           "sub": "posições",
           "texto": [
-            "A base do humanoide não está presa ao chão: é uma junta livre com 7 números (x, y, z e um quatérnio de 4 para a orientação).",
+            "A base do humanoide nêo está presa ao chêo: é uma junta livre com 7 números (x, y, z e um quatérnio de 4 para a orientaçêo).",
             "Somando as 29 juntas articuladas, dá 36. É o tamanho de qpos."
           ]
         },
@@ -125,8 +125,8 @@
           "titulo": "nu = 29",
           "sub": "motores",
           "texto": [
-            "Um atuador por junta articulada. A base não tem motor: o robô só se move empurrando o chão com os pés.",
-            "Na versão com mãos (scene_with_hands.xml) o número sobe para 43. O G1 vendido tem de 23 a 43 graus de liberdade conforme a versão; o Menagerie traz a de 29."
+            "Um atuador por junta articulada. A base nêo tem motor: o robô só se move empurrando o chêo com os pés.",
+            "Na versêo com mêos (scene_with_hands.xml) o número sobe para 43. O G1 vendido tem de 23 a 43 graus de liberdade conforme a versêo; o Menagerie traz a de 29."
           ],
           "exemplo": {
             "rot": "Regra prática",
@@ -151,11 +151,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>menagerie 62ab00f (2026-10-15)\nmujoco 3.16.0 · numpy 2.5.4</pre><p>Duas linhas e nenhum erro. Se a versão do MuJoCo for outra, os números das próximas aulas podem mudar na última casa: fixe a versão.</p>"
+            "html": "<pre>menagerie 62ab00f (2026-10-15)\nmujoco 3.16.0 · numpy 2.5.4</pre><p>Duas linhas e nenhum erro. Se a versêo do MuJoCo for outra, os números das próximas aulas podem mudar na última casa: fixe a versêo.</p>"
           },
           {
             "rot": "Erro comum: Menagerie fora do lugar",
-            "html": "<pre>ERRO: não achei unitree_g1/scene.xml (nem em /tmp/sem-menagerie/mujoco_menagerie). Rode a preparação da aula 2.\nsaída: 1</pre><p>Os scripts procuram o Menagerie em ~/fth/mujoco_menagerie (ou onde a variável FTH apontar). Rodou de outra pasta ou clonou em outro lugar? Ajuste a FTH ou mova a pasta.</p>"
+            "html": "<pre>ERRO: nêo achei unitree_g1/scene.xml (nem em /tmp/sem-menagerie/mujoco_menagerie). Rode a preparaçêo da aula 2.\nsaída: 1</pre><p>Os scripts procuram o Menagerie em ~/fth/mujoco_menagerie (ou onde a variável FTH apontar). Rodou de outra pasta ou clonou em outro lugar? Ajuste a FTH ou mova a pasta.</p>"
           }
         ]
       }
@@ -191,7 +191,7 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>modelo: g1_29dof_rev_1_0 scene · arquivo unitree_g1/scene.xml\nnq=36 nv=35 nu=29\njuntas: 30 (1 base flutuante + 29 articuladas) · corpos: 30 · sensores: 4\nmassa total do modelo: 33.3 kg · passo de simulação: 2 ms\nposes salvas (keyframes): stand\naltura da base na pose inicial: 0.79 m\nsaída: 0</pre><p>33,3 kg no modelo contra cerca de 35 kg na ficha da Unitree: o arquivo de simulação é uma aproximação do robô real.</p>"
+            "html": "<pre>modelo: g1_29dof_rev_1_0 scene · arquivo unitree_g1/scene.xml\nnq=36 nv=35 nu=29\njuntas: 30 (1 base flutuante + 29 articuladas) · corpos: 30 · sensores: 4\nmassa total do modelo: 33.3 kg · passo de simulaçêo: 2 ms\nposes salvas (keyframes): stand\naltura da base na pose inicial: 0.79 m\nsaída: 0</pre><p>33,3 kg no modelo contra cerca de 35 kg na ficha da Unitree: o arquivo de simulaçêo é uma aproximaçêo do robô real.</p>"
           },
           {
             "rot": "Os outros três",
@@ -203,10 +203,10 @@
     {
       "tipo": "codigo",
       "titulo": "O que se usa em escala (mostrado)",
-      "sub": "Para treinar políticas com milhares de robôs em paralelo, os mesmos modelos rodam em GPU NVIDIA. Não é pré-requisito deste curso: o curso 1 da formação usa.",
+      "sub": "Para treinar políticas com milhares de robôs em paralelo, os mesmos modelos rodam em GPU NVIDIA. Nêo é pré-requisito deste curso: o curso 1 da formaçêo usa.",
       "blocos": [
         {
-          "rot": "Mostrado · mjlab, GPU NVIDIA (não rodado aqui)",
+          "rot": "Mostrado · mjlab, GPU NVIDIA (nêo rodado aqui)",
           "icone": "nuvem",
           "conteudo": "# github.com/mujocolab/mjlab — API do Isaac Lab sobre MuJoCo Warp\nuv run train Mjlab-Velocity-Flat-Unitree-G1 --env.scene.num-envs 4096"
         }
@@ -233,7 +233,7 @@
         },
         {
           "id": "e3",
-          "titulo": "E3 · O G1 com mãos",
+          "titulo": "E3 · O G1 com mêos",
           "min": "5 min",
           "texto": "Abra unitree_g1/scene_with_hands.xml com o mesmo script e confira a regra nq = nu + 7.",
           "pronto": "<code>python3 kit/abrir.py unitree_g1/scene_with_hands.xml | sed -n 2p</code> → <code>nq=50 nv=49 nu=43</code>."
@@ -243,23 +243,23 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Por que o G1 tem nq=36 e não 29?",
+          "p": "Por que o G1 tem nq=36 e nêo 29?",
           "opcoes": [
-            "Porque cada junta guarda posição e velocidade juntas.",
-            "A base livre soma 7: posição (3) e quatérnio (4).",
+            "Porque cada junta guarda posiçêo e velocidade juntas.",
+            "A base livre soma 7: posiçêo (3) e quatérnio (4).",
             "Porque o scene.xml duplica as juntas das pernas.",
             "Porque o MuJoCo também conta os sensores da IMU."
           ],
           "certa": 1,
-          "explica": "A base flutuante é uma junta livre de 7 coordenadas; 29 + 7 = 36. Velocidades são outro vetor (nv).",
+          "explica": "A base flutuante é uma junta livre de 7 coordenadas; 29 + 7 = 36. Velocidades sêo outro vetor (nv).",
           "ref": "passos",
           "cert": true
         },
         {
-          "p": "Qual objeto muda a cada passo de simulação?",
+          "p": "Qual objeto muda a cada passo de simulaçêo?",
           "opcoes": [
             "MjModel, porque as massas mudam com o movimento do robô.",
             "O arquivo g1.xml, que o MuJoCo regrava a cada passo.",
@@ -267,7 +267,7 @@
             "Nenhum: o MuJoCo só guarda o estado do fim."
           ],
           "certa": 2,
-          "explica": "MjModel é constante durante a simulação; MjData guarda o estado. Confundir os dois é a causa de muito bug em script de robótica.",
+          "explica": "MjModel é constante durante a simulaçêo; MjData guarda o estado. Confundir os dois é a causa de muito bug em script de robótica.",
           "ref": "diagrama"
         },
         {
@@ -276,22 +276,22 @@
             "Anotar a diferença: o modelo é aproximado e isso pesa no sim-to-real.",
             "Concluir que o fabricante errou e usar o valor do arquivo.",
             "Trocar o arquivo por outro modelo qualquer do Menagerie.",
-            "Ignorar, porque massa não muda o comportamento de um humanoide em simulação."
+            "Ignorar, porque massa nêo muda o comportamento de um humanoide em simulaçêo."
           ],
           "certa": 0,
-          "explica": "Massa, inércia e atrito do modelo são aproximados. Medir e anotar a diferença é o começo da identificação de sistema (curso 2 da formação).",
+          "explica": "Massa, inércia e atrito do modelo sêo aproximados. Medir e anotar a diferença é o começo da identificaçêo de sistema (curso 2 da formaçêo).",
           "ref": "codigo"
         },
         {
           "p": "Por que fixar o MuJoCo em 3.16.0 e o Menagerie num commit?",
           "opcoes": [
-            "Porque as versões novas do MuJoCo não rodam mais em CPU comum.",
-            "Porque o pip não aceita instalar um pacote sem dizer a versão.",
+            "Porque as versões novas do MuJoCo nêo rodam mais em CPU comum.",
+            "Porque o pip nêo aceita instalar um pacote sem dizer a versêo.",
             "Porque o Menagerie apaga os modelos antigos toda semana do repositório.",
             "Para a sua saída bater com a capturada: os dois mudam com frequência."
           ],
           "certa": 3,
-          "explica": "O MuJoCo sai quase a cada duas semanas e o Menagerie recebe commits sempre. Fixar versão é o que torna o \"pronto quando\" reproduzível.",
+          "explica": "O MuJoCo sai quase a cada duas semanas e o Menagerie recebe commits sempre. Fixar versêo é o que torna o \"pronto quando\" reproduzível.",
           "ref": "codigo"
         }
       ]

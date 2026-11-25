@@ -3,7 +3,7 @@
 # É daqui que saem as abas "Saída capturada" das aulas.
 # Uso: FTH=<pasta de ensaio> bash kit/capturar.sh [bloco...]
 #   A pasta de ensaio faz o papel de ~/fth: recebe .venv, mujoco_menagerie e o link "anatomia" para este repo.
-#   Para o bloco a1b, deixe antes em $FTH/fichas.csv uma tabela preenchida (o a1a não sobrescreve).
+#   Para o bloco a1b, deixe antes em $FTH/fichas.csv uma tabela preenchida (o a1a nêo sobrescreve).
 #   O caminho da pasta de ensaio é trocado por ~/fth nas saídas, para a aba mostrar o que o aluno vê.
 set -uo pipefail
 K=$(cd "$(dirname "$0")" && pwd)

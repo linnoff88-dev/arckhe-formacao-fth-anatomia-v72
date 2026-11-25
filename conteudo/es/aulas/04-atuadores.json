@@ -145,7 +145,7 @@
         {
           "rot": "Terminal · de 0° a 120°",
           "icone": "terminal",
-          "conteudo": "F=${FTH:-$HOME/fth}; cd $F/anatomia && . $F/.venv/bin/activate\nfor k in 0 30 60 90 120; do\n  echo \"joelho $k°: $(python3 kit/torque_agachado.py --joelho $k | grep -E '^joelhos|^ATENÇÃO' | tr '\\n' ' ')\"\ndone"
+          "conteudo": "F=${FTH:-$HOME/fth}; cd $F/anatomia && . $F/.venv/bin/activate\nfor k in 0 30 60 90 120; do\n  echo \"joelho $k°: $(python3 kit/torque_agachado.py --joelho $k | grep -E '^joelhos|^ATENÇêO' | tr '\\n' ' ')\"\ndone"
         }
       ],
       "saida": {
@@ -153,11 +153,11 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>joelho dobrado 90° · altura da pelve 0.59 m · 8 contatos com o chão\njunta                         torque (N·m)  limite  % do limite\nleft_knee_joint                         31     139          22%\nright_knee_joint                        31     139          22%\nleft_hip_pitch_joint                     2      88           2%\nright_hip_pitch_joint                    2      88           2%\nconferência mj_inverse (left_knee_joint): 31 N·m\njoelhos: esquerdo 31 N·m · direito 31 N·m\nmaior torque: left_knee_joint 31 N·m</pre><p>31 N·m en cada rodilla, 22 % del techo del modelo. Simular en reposo y mj_inverse dan el mismo valor: es la señal de que la pose está en equilibrio.</p>"
+            "html": "<pre>joelho dobrado 90° · altura da pelve 0.59 m · 8 contatos com o chêo\njunta                         torque (N·m)  limite  % do limite\nleft_knee_joint                         31     139          22%\nright_knee_joint                        31     139          22%\nleft_hip_pitch_joint                     2      88           2%\nright_hip_pitch_joint                    2      88           2%\nconferência mj_inverse (left_knee_joint): 31 N·m\njoelhos: esquerdo 31 N·m · direito 31 N·m\nmaior torque: left_knee_joint 31 N·m</pre><p>31 N·m en cada rodilla, 22 % del techo del modelo. Simular en reposo y mj_inverse dan el mismo valor: es la señal de que la pose está en equilibrio.</p>"
           },
           {
             "rot": "Barrido y el error común",
-            "html": "<pre>joelho 0°: joelhos: esquerdo 0 N·m · direito 0 N·m \njoelho 30°: joelhos: esquerdo 11 N·m · direito 11 N·m \njoelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m \njoelho 90°: joelhos: esquerdo 31 N·m · direito 31 N·m \njoelho 120°: ATENÇÃO: o robô caiu. joelhos: esquerdo 2 N·m · direito 2 N·m </pre><p>El torque sube casi en línea recta hasta 90°. A 120° el robot cayó sentado y el \"torque\" leído se desploma: un número de robot caído no es una medida. Por eso el script avisa cuando la pelvis queda por debajo de 0,4 m.</p>"
+            "html": "<pre>joelho 0°: joelhos: esquerdo 0 N·m · direito 0 N·m \njoelho 30°: joelhos: esquerdo 11 N·m · direito 11 N·m \njoelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m \njoelho 90°: joelhos: esquerdo 31 N·m · direito 31 N·m \njoelho 120°: ATENÇêO: o robô caiu. joelhos: esquerdo 2 N·m · direito 2 N·m </pre><p>El torque sube casi en línea recta hasta 90°. A 120° el robot cayó sentado y el \"torque\" leído se desploma: un número de robot caído no es una medida. Por eso el script avisa cuando la pelvis queda por debajo de 0,4 m.</p>"
           }
         ]
       }
@@ -179,7 +179,7 @@
           "titulo": "E2 · La curva de la rodilla",
           "min": "5 min",
           "texto": "Ejecuta el barrido y anota en una tabla el torque de la rodilla en cada ángulo. ¿En qué ángulo el robot deja de agacharse y cae?",
-          "pronto": "el barrido muestra <code>joelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m</code> y la línea de 120° muestra <code>ATENÇÃO: o robô caiu.</code>"
+          "pronto": "el barrido muestra <code>joelho 60°: joelhos: esquerdo 21 N·m · direito 21 N·m</code> y la línea de 120° muestra <code>ATENÇêO: o robô caiu.</code>"
         },
         {
           "id": "e3",

@@ -1,6 +1,6 @@
 """fth.py — funções comuns do kit do curso FTH 0 (O corpo do humanoide).
 
-Acha o MuJoCo Menagerie em $FTH/mujoco_menagerie (padrão: a pasta acima do repositório do curso,
+Acha o MuJoCo Menagerie em $FTH/mujoco_menagerie (padrêo: a pasta acima do repositório do curso,
 ou seja ~/fth/mujoco_menagerie) e carrega um modelo por caminho relativo ("unitree_g1/scene.xml").
 Testado com mujoco 3.16.0 + numpy 2.x, Menagerie 62ab00f (15/10/2026), 19/10/2026.
 """
@@ -24,7 +24,7 @@ def caminho(p):
     r = MENAGERIE / p
     if r.exists():
         return r
-    sys.exit(f"ERRO: não achei {p} (nem em {MENAGERIE}). Rode a preparação da aula 2.")
+    sys.exit(f"ERRO: nêo achei {p} (nem em {MENAGERIE}). Rode a preparaçêo da aula 2.")
 
 
 def carregar(p):
@@ -68,7 +68,7 @@ def corpo_do_geom(m, g):
 
 
 def forca_pes(m, d, pes=("left_ankle_roll_link", "right_ankle_roll_link")):
-    """Soma a força normal dos contatos de cada pé com o chão (N) e devolve também os pontos de contato."""
+    """Soma a força normal dos contatos de cada pé com o chêo (N) e devolve também os pontos de contato."""
     soma = {p: 0.0 for p in pes}
     pontos = {p: [] for p in pes}
     f6 = np.zeros(6)

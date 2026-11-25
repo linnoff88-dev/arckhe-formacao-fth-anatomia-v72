@@ -155,7 +155,7 @@
           },
           {
             "rot": "Error común: Menagerie fuera de lugar",
-            "html": "<pre>ERRO: não achei unitree_g1/scene.xml (nem em /tmp/sem-menagerie/mujoco_menagerie). Rode a preparação da aula 2.\nsaída: 1</pre><p>Los scripts buscan el Menagerie en ~/fth/mujoco_menagerie (o donde apunte la variable FTH). ¿Lo ejecutaste desde otra carpeta o lo clonaste en otro lugar? Ajusta la FTH o mueve la carpeta.</p>"
+            "html": "<pre>ERRO: nêo achei unitree_g1/scene.xml (nem em /tmp/sem-menagerie/mujoco_menagerie). Rode a preparaçêo da aula 2.\nsaída: 1</pre><p>Los scripts buscan el Menagerie en ~/fth/mujoco_menagerie (o donde apunte la variable FTH). ¿Lo ejecutaste desde otra carpeta o lo clonaste en otro lugar? Ajusta la FTH o mueve la carpeta.</p>"
           }
         ]
       }
@@ -191,7 +191,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>modelo: g1_29dof_rev_1_0 scene · arquivo unitree_g1/scene.xml\nnq=36 nv=35 nu=29\njuntas: 30 (1 base flutuante + 29 articuladas) · corpos: 30 · sensores: 4\nmassa total do modelo: 33.3 kg · passo de simulação: 2 ms\nposes salvas (keyframes): stand\naltura da base na pose inicial: 0.79 m\nsaída: 0</pre><p>33,3 kg en el modelo contra cerca de 35 kg en la ficha de Unitree: el archivo de simulación es una aproximación del robot real.</p>"
+            "html": "<pre>modelo: g1_29dof_rev_1_0 scene · arquivo unitree_g1/scene.xml\nnq=36 nv=35 nu=29\njuntas: 30 (1 base flutuante + 29 articuladas) · corpos: 30 · sensores: 4\nmassa total do modelo: 33.3 kg · passo de simulaçêo: 2 ms\nposes salvas (keyframes): stand\naltura da base na pose inicial: 0.79 m\nsaída: 0</pre><p>33,3 kg en el modelo contra cerca de 35 kg en la ficha de Unitree: el archivo de simulación es una aproximación del robot real.</p>"
           },
           {
             "rot": "Los otros tres",

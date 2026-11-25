@@ -6,7 +6,7 @@
   "titulo_curto": "IMU, força e tato",
   "minutos": 15,
   "lead": "Um humanoide em pé está sempre caindo um pouco e se corrigindo. Para isso ele precisa saber como está inclinado, onde está cada junta e quanto peso há em cada pé. Nesta aula você lê os sensores que o MJCF do G1 declara, acrescenta os que faltam sem editar o arquivo e confere a leitura contra o peso do robô.",
-  "objetivo": "ler a IMU e a força em cada pé do G1 parado e conferir que a soma dos contatos com o chão bate com o peso do robô.",
+  "objetivo": "ler a IMU e a força em cada pé do G1 parado e conferir que a soma dos contatos com o chêo bate com o peso do robô.",
   "competencias": [
     "ler-imu",
     "acrescentar-sensor-pela-api",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "camadas",
-      "t": "Propriocepção × percepção: o que cada sensor responde"
+      "t": "Propriocepçêo × percepçêo: o que cada sensor responde"
     },
     {
       "icone": "lupa",
@@ -27,10 +27,10 @@
     },
     {
       "icone": "check",
-      "t": "Força no tornozelo × força no chão: a diferença é o pé"
+      "t": "Força no tornozelo × força no chêo: a diferença é o pé"
     }
   ],
-  "hero_alt": "Pé de robô humanoide apoiado numa placa de força de metal no chão do laboratório, com cabos finos saindo da placa.",
+  "hero_alt": "Pé de robô humanoide apoiado numa placa de força de metal no chêo do laboratório, com cabos finos saindo da placa.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -40,7 +40,7 @@
         {
           "icone": "alvo",
           "titulo": "IMU",
-          "sub": "inclinação",
+          "sub": "inclinaçêo",
           "forte": true,
           "itens": [
             {
@@ -48,7 +48,7 @@
               "t": "giroscópio + acelerômetro"
             }
           ],
-          "detalhe": "Mede rotação (giroscópio) e aceleração (acelerômetro); a orientação sai da fusão dos dois. O MJCF do G1 declara duas IMUs, na pelve e no tronco. O Booster K1 anuncia IMU de 9 eixos."
+          "detalhe": "Mede rotaçêo (giroscópio) e aceleraçêo (acelerômetro); a orientaçêo sai da fusêo dos dois. O MJCF do G1 declara duas IMUs, na pelve e no tronco. O Booster K1 anuncia IMU de 9 eixos."
         },
         {
           "icone": "relogio",
@@ -57,10 +57,10 @@
           "itens": [
             {
               "icone": "seta",
-              "t": "posição e velocidade"
+              "t": "posiçêo e velocidade"
             }
           ],
-          "detalhe": "Dizem o ângulo e a velocidade de cada junta. G1 e K1 anunciam encoder duplo por junta. Na simulação, é o qpos e o qvel que você já leu na aula 2."
+          "detalhe": "Dizem o ângulo e a velocidade de cada junta. G1 e K1 anunciam encoder duplo por junta. Na simulaçêo, é o qpos e o qvel que você já leu na aula 2."
         },
         {
           "icone": "grafico",
@@ -72,23 +72,23 @@
               "t": "célula de carga"
             }
           ],
-          "detalhe": "Quanto peso está em cada pé. Um sensor de força e torque de 6 eixos no tornozelo não aparece nas fichas do G1, R1, H2 e K1 lidas em 19/10/2026 (incerto). Na simulação, você acrescenta um sensor de força no sítio do pé."
+          "detalhe": "Quanto peso está em cada pé. Um sensor de força e torque de 6 eixos no tornozelo nêo aparece nas fichas do G1, R1, H2 e K1 lidas em 19/10/2026 (incerto). Na simulaçêo, você acrescenta um sensor de força no sítio do pé."
         },
         {
           "icone": "usuario",
           "titulo": "Tato",
-          "sub": "mãos",
+          "sub": "mêos",
           "itens": [
             {
               "icone": "seta",
               "t": "matriz tátil"
             }
           ],
-          "detalhe": "A mão Dex3-1 do G1 EDU (7 graus de liberdade) tem matriz tátil opcional, segundo a Unitree. A Sharpa Wave anuncia mais de 1.000 sensores por ponta de dedo (relatado, CES 2026). Mãos são assunto do curso 3."
+          "detalhe": "A mêo Dex3-1 do G1 EDU (7 graus de liberdade) tem matriz tátil opcional, segundo a Unitree. A Sharpa Wave anuncia mais de 1.000 sensores por ponta de dedo (relatado, CES 2026). Mêos sêo assunto do curso 3."
         },
         {
           "icone": "lupa",
-          "titulo": "Percepção",
+          "titulo": "Percepçêo",
           "sub": "câmera, LiDAR",
           "itens": [
             {
@@ -96,37 +96,37 @@
               "t": "profundidade + LiDAR 3D"
             }
           ],
-          "detalhe": "O G1 traz câmera de profundidade, LiDAR 3D e 4 microfones, segundo a ficha oficial. O MJCF do Menagerie não declara câmera nem LiDAR: a percepção fica para o curso de VLA."
+          "detalhe": "O G1 traz câmera de profundidade, LiDAR 3D e 4 microfones, segundo a ficha oficial. O MJCF do Menagerie nêo declara câmera nem LiDAR: a percepçêo fica para o curso de VLA."
         }
       ],
-      "legenda": "Sensores que o MJCF não declara não existem na simulação até você acrescentar."
+      "legenda": "Sensores que o MJCF nêo declara nêo existem na simulaçêo até você acrescentar."
     },
     {
       "tipo": "passos",
-      "titulo": "Quatro leituras para não errar",
+      "titulo": "Quatro leituras para nêo errar",
       "sub": "Clique em cada uma.",
       "passos": [
         {
           "titulo": "9,8 parado",
           "sub": "acelerômetro",
           "texto": [
-            "O acelerômetro mede a força que segura o sensor, não o movimento: parado no chão, ele lê 9,8 m/s² para cima. Em queda livre, leria zero.",
-            "É assim que a IMU sabe onde é \"para baixo\" e, daí, a inclinação."
+            "O acelerômetro mede a força que segura o sensor, nêo o movimento: parado no chêo, ele lê 9,8 m/s² para cima. Em queda livre, leria zero.",
+            "É assim que a IMU sabe onde é \"para baixo\" e, daí, a inclinaçêo."
           ]
         },
         {
           "titulo": "Acrescentar",
           "sub": "MjSpec",
           "texto": [
-            "O sensores.py abre o arquivo com mujoco.MjSpec.from_file, acrescenta um sensor de orientação (framequat) na IMU da pelve e um de força em cada pé, e compila.",
+            "O sensores.py abre o arquivo com mujoco.MjSpec.from_file, acrescenta um sensor de orientaçêo (framequat) na IMU da pelve e um de força em cada pé, e compila.",
             "O arquivo do Menagerie fica intocado: você muda o robô no seu script, versionado junto com o seu código."
           ]
         },
         {
           "titulo": "158 × 164 N",
-          "sub": "tornozelo × chão",
+          "sub": "tornozelo × chêo",
           "texto": [
-            "O sensor de força no sítio do pé mede o que passa do pé para a perna; o contato mede o que o chão empurra. A diferença, cerca de 6 N, é o peso do próprio pé (0,61 kg no modelo).",
+            "O sensor de força no sítio do pé mede o que passa do pé para a perna; o contato mede o que o chêo empurra. A diferença, cerca de 6 N, é o peso do próprio pé (0,61 kg no modelo).",
             "Num robô real, a célula de carga fica no tornozelo pelo mesmo motivo."
           ]
         },
@@ -134,8 +134,8 @@
           "titulo": "Soma = peso",
           "sub": "a conferência",
           "texto": [
-            "Parado, a soma das forças de contato tem de igualar o peso: 33,3 kg × 9,81 = 327 N. A razão 1.00 mostra que o robô está apoiado só nos pés e sem empurrão.",
-            "Se der menos de 1, alguma coisa está segurando o robô (outra parte tocando o chão, uma força externa)."
+            "Parado, a soma das forças de contato tem de igualar o peso: 33,3 kg × 9,81 = 327 N. A razêo 1.00 mostra que o robô está apoiado só nos pés e sem empurrêo.",
+            "Se der menos de 1, alguma coisa está segurando o robô (outra parte tocando o chêo, uma força externa)."
           ],
           "exemplo": {
             "rot": "Linha que confere",
@@ -165,11 +165,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>G1 parado 1 s · 7 sensores (4 do arquivo + 3 acrescentados)\n  imu-torso-angular-velocity         [0. 0. 0.]\n  imu-torso-linear-acceleration      [0.  0.  9.8]\n  imu-pelvis-angular-velocity        [0. 0. 0.]\n  imu-pelvis-linear-acceleration     [0.  0.  9.8]\nIMU (pelve): inclinação lateral 0.0° · frente/trás -0.1°\nsensor de força no tornozelo: pé esquerdo 158 N · pé direito 157 N\ncontatos com o chão:          pé esquerdo 164 N · pé direito 163 N\nsoma dos contatos / peso do robô (327 N): 1.00</pre><p>Giroscópios em zero, acelerômetros em 9,8 para cima, inclinação perto de zero e o peso dividido entre os dois pés.</p>"
+            "html": "<pre>G1 parado 1 s · 7 sensores (4 do arquivo + 3 acrescentados)\n  imu-torso-angular-velocity         [0. 0. 0.]\n  imu-torso-linear-acceleration      [0.  0.  9.8]\n  imu-pelvis-angular-velocity        [0. 0. 0.]\n  imu-pelvis-linear-acceleration     [0.  0.  9.8]\nIMU (pelve): inclinaçêo lateral 0.0° · frente/trás -0.1°\nsensor de força no tornozelo: pé esquerdo 158 N · pé direito 157 N\ncontatos com o chêo:          pé esquerdo 164 N · pé direito 163 N\nsoma dos contatos / peso do robô (327 N): 1.00</pre><p>Giroscópios em zero, acelerômetros em 9,8 para cima, inclinaçêo perto de zero e o peso dividido entre os dois pés.</p>"
           },
           {
-            "rot": "Erro comum: 9,8 é aceleração?",
-            "html": "<p>Ler <code>[0. 0. 9.8]</code> e concluir que o robô está subindo é o erro clássico. O acelerômetro mede força específica: parado, mostra a reação do chão contra a gravidade. Para ver movimento de verdade, compare com o giroscópio e com a altura da pelve.</p>"
+            "rot": "Erro comum: 9,8 é aceleraçêo?",
+            "html": "<p>Ler <code>[0. 0. 9.8]</code> e concluir que o robô está subindo é o erro clássico. O acelerômetro mede força específica: parado, mostra a reaçêo do chêo contra a gravidade. Para ver movimento de verdade, compare com o giroscópio e com a altura da pelve.</p>"
           }
         ]
       }
@@ -190,7 +190,7 @@
           "id": "e2",
           "titulo": "E2 · Mais tempo parado",
           "min": "3 min",
-          "texto": "Rode com --segundos 3. Se o robô estivesse escorregando ou afundando, a razão mudaria.",
+          "texto": "Rode com --segundos 3. Se o robô estivesse escorregando ou afundando, a razêo mudaria.",
           "pronto": "<code>python3 kit/sensores.py --segundos 3 | tail -1</code> → <code>soma dos contatos / peso do robô (327 N): 1.00</code>."
         },
         {
@@ -205,28 +205,28 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "O acelerômetro da pelve do G1 parado lê [0, 0, 9.8]. O que isso significa?",
           "opcoes": [
             "Que o robô está acelerando para cima a 9,8 m/s² naquele instante.",
-            "Que o sensor da pelve está com defeito de calibração.",
-            "Que o chão sustenta o robô contra a gravidade, e ele mede isso.",
-            "Que a simulação ainda não começou a contar o tempo."
+            "Que o sensor da pelve está com defeito de calibraçêo.",
+            "Que o chêo sustenta o robô contra a gravidade, e ele mede isso.",
+            "Que a simulaçêo ainda nêo começou a contar o tempo."
           ],
           "certa": 2,
-          "explica": "Acelerômetro mede força específica. Parado, lê a gravidade para cima; em queda livre, leria zero. É dele que a IMU tira a direção de \"para baixo\".",
+          "explica": "Acelerômetro mede força específica. Parado, lê a gravidade para cima; em queda livre, leria zero. É dele que a IMU tira a direçêo de \"para baixo\".",
           "ref": "passos",
           "cert": true
         },
         {
-          "p": "O sensor de força do pé leu 158 N e o contato com o chão 164 N. Por que a diferença?",
+          "p": "O sensor de força do pé leu 158 N e o contato com o chêo 164 N. Por que a diferença?",
           "opcoes": [
-            "O sensor do tornozelo não vê o peso do pé, que fica abaixo dele.",
+            "O sensor do tornozelo nêo vê o peso do pé, que fica abaixo dele.",
             "Ruído do sensor de força, que o MuJoCo acrescenta sozinho.",
-            "O contato com o chão conta o peso do pé duas vezes na soma.",
-            "O robô está escorregando devagar e perdendo parte do apoio no chão."
+            "O contato com o chêo conta o peso do pé duas vezes na soma.",
+            "O robô está escorregando devagar e perdendo parte do apoio no chêo."
           ],
           "certa": 0,
           "explica": "O sítio do pé mede o que passa do pé para a perna. O pé (0,61 kg no modelo) pesa cerca de 6 N, e essa parte só aparece no contato.",
@@ -237,11 +237,11 @@
           "opcoes": [
             "Porque o g1.xml do Menagerie fica marcado como só leitura no disco.",
             "O arquivo original fica intacto e a mudança fica versionada no seu código.",
-            "Porque a MjSpec deixa a simulação do robô bem mais rápida.",
-            "Porque sensores declarados direto no XML não funcionam mais no MuJoCo 3.16."
+            "Porque a MjSpec deixa a simulaçêo do robô bem mais rápida.",
+            "Porque sensores declarados direto no XML nêo funcionam mais no MuJoCo 3.16."
           ],
           "certa": 1,
-          "explica": "Editar o arquivo de terceiros quebra na próxima atualização e some da sua história no Git. Montar o modelo no script deixa claro o que você mudou.",
+          "explica": "Editar o arquivo de terceiros quebra na próxima atualizaçêo e some da sua história no Git. Montar o modelo no script deixa claro o que você mudou.",
           "ref": "codigo"
         }
       ]
@@ -284,7 +284,7 @@
           "icone": "robo"
         },
         {
-          "t": "Câmeras e percepção com VLA: curso vla-v72",
+          "t": "Câmeras e percepçêo com VLA: curso vla-v72",
           "href": "https://linnoff88-dev.github.io/
           "icone": "cerebro"
         }
